@@ -123,32 +123,32 @@ AP/fast:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/build
 .PHONY : AP/fast
 
-Nodo.o: Nodo.cpp.o
+SetTransiciones.o: SetTransiciones.cpp.o
 
-.PHONY : Nodo.o
+.PHONY : SetTransiciones.o
 
 # target to build an object file
-Nodo.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Nodo.cpp.o
-.PHONY : Nodo.cpp.o
+SetTransiciones.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetTransiciones.cpp.o
+.PHONY : SetTransiciones.cpp.o
 
-Nodo.i: Nodo.cpp.i
+SetTransiciones.i: SetTransiciones.cpp.i
 
-.PHONY : Nodo.i
+.PHONY : SetTransiciones.i
 
 # target to preprocess a source file
-Nodo.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Nodo.cpp.i
-.PHONY : Nodo.cpp.i
+SetTransiciones.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetTransiciones.cpp.i
+.PHONY : SetTransiciones.cpp.i
 
-Nodo.s: Nodo.cpp.s
+SetTransiciones.s: SetTransiciones.cpp.s
 
-.PHONY : Nodo.s
+.PHONY : SetTransiciones.s
 
 # target to generate assembly for a file
-Nodo.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Nodo.cpp.s
-.PHONY : Nodo.cpp.s
+SetTransiciones.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetTransiciones.cpp.s
+.PHONY : SetTransiciones.cpp.s
 
 src/AP.o: src/AP.cpp.o
 
@@ -176,6 +176,33 @@ src/AP.s: src/AP.cpp.s
 src/AP.cpp.s:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/AP.cpp.s
 .PHONY : src/AP.cpp.s
+
+src/Nodo.o: src/Nodo.cpp.o
+
+.PHONY : src/Nodo.o
+
+# target to build an object file
+src/Nodo.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Nodo.cpp.o
+.PHONY : src/Nodo.cpp.o
+
+src/Nodo.i: src/Nodo.cpp.i
+
+.PHONY : src/Nodo.i
+
+# target to preprocess a source file
+src/Nodo.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Nodo.cpp.i
+.PHONY : src/Nodo.cpp.i
+
+src/Nodo.s: src/Nodo.cpp.s
+
+.PHONY : src/Nodo.s
+
+# target to generate assembly for a file
+src/Nodo.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Nodo.cpp.s
+.PHONY : src/Nodo.cpp.s
 
 src/SetNodos.o: src/SetNodos.cpp.o
 
@@ -240,12 +267,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AP"
-	@echo "... Nodo.o"
-	@echo "... Nodo.i"
-	@echo "... Nodo.s"
+	@echo "... SetTransiciones.o"
+	@echo "... SetTransiciones.i"
+	@echo "... SetTransiciones.s"
 	@echo "... src/AP.o"
 	@echo "... src/AP.i"
 	@echo "... src/AP.s"
+	@echo "... src/Nodo.o"
+	@echo "... src/Nodo.i"
+	@echo "... src/Nodo.s"
 	@echo "... src/SetNodos.o"
 	@echo "... src/SetNodos.i"
 	@echo "... src/SetNodos.s"
