@@ -123,32 +123,59 @@ AP/fast:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/build
 .PHONY : AP/fast
 
-AP.o: AP.cpp.o
+SetNodos.o: SetNodos.cpp.o
 
-.PHONY : AP.o
+.PHONY : SetNodos.o
 
 # target to build an object file
-AP.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/AP.cpp.o
-.PHONY : AP.cpp.o
+SetNodos.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetNodos.cpp.o
+.PHONY : SetNodos.cpp.o
 
-AP.i: AP.cpp.i
+SetNodos.i: SetNodos.cpp.i
 
-.PHONY : AP.i
+.PHONY : SetNodos.i
 
 # target to preprocess a source file
-AP.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/AP.cpp.i
-.PHONY : AP.cpp.i
+SetNodos.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetNodos.cpp.i
+.PHONY : SetNodos.cpp.i
 
-AP.s: AP.cpp.s
+SetNodos.s: SetNodos.cpp.s
 
-.PHONY : AP.s
+.PHONY : SetNodos.s
 
 # target to generate assembly for a file
-AP.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/AP.cpp.s
-.PHONY : AP.cpp.s
+SetNodos.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetNodos.cpp.s
+.PHONY : SetNodos.cpp.s
+
+src/AP.o: src/AP.cpp.o
+
+.PHONY : src/AP.o
+
+# target to build an object file
+src/AP.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/AP.cpp.o
+.PHONY : src/AP.cpp.o
+
+src/AP.i: src/AP.cpp.i
+
+.PHONY : src/AP.i
+
+# target to preprocess a source file
+src/AP.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/AP.cpp.i
+.PHONY : src/AP.cpp.i
+
+src/AP.s: src/AP.cpp.s
+
+.PHONY : src/AP.s
+
+# target to generate assembly for a file
+src/AP.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/AP.cpp.s
+.PHONY : src/AP.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -186,9 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AP"
-	@echo "... AP.o"
-	@echo "... AP.i"
-	@echo "... AP.s"
+	@echo "... SetNodos.o"
+	@echo "... SetNodos.i"
+	@echo "... SetNodos.s"
+	@echo "... src/AP.o"
+	@echo "... src/AP.i"
+	@echo "... src/AP.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

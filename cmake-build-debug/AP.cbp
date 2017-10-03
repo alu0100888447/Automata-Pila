@@ -84,10 +84,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/AP.cpp">
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/SetNodos.cpp">
 			<Option target="AP"/>
 		</Unit>
-		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/AP.h">
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/SetNodos.h">
+			<Option target="AP"/>
+		</Unit>
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/include/AP.h">
+			<Option target="AP"/>
+		</Unit>
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/AP.cpp">
 			<Option target="AP"/>
 		</Unit>
 		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/main.cpp">

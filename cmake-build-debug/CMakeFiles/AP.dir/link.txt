@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/AP.dir/src/main.cpp.o CMakeFiles/AP.dir/AP.cpp.o  -o AP 
+/usr/bin/c++  -g   CMakeFiles/AP.dir/src/main.cpp.o CMakeFiles/AP.dir/src/AP.cpp.o CMakeFiles/AP.dir/SetNodos.cpp.o  -o AP 
