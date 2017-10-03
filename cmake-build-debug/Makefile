@@ -123,32 +123,32 @@ AP/fast:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/build
 .PHONY : AP/fast
 
-SetTransiciones.o: SetTransiciones.cpp.o
+Transicion.o: Transicion.cpp.o
 
-.PHONY : SetTransiciones.o
+.PHONY : Transicion.o
 
 # target to build an object file
-SetTransiciones.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetTransiciones.cpp.o
-.PHONY : SetTransiciones.cpp.o
+Transicion.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Transicion.cpp.o
+.PHONY : Transicion.cpp.o
 
-SetTransiciones.i: SetTransiciones.cpp.i
+Transicion.i: Transicion.cpp.i
 
-.PHONY : SetTransiciones.i
+.PHONY : Transicion.i
 
 # target to preprocess a source file
-SetTransiciones.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetTransiciones.cpp.i
-.PHONY : SetTransiciones.cpp.i
+Transicion.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Transicion.cpp.i
+.PHONY : Transicion.cpp.i
 
-SetTransiciones.s: SetTransiciones.cpp.s
+Transicion.s: Transicion.cpp.s
 
-.PHONY : SetTransiciones.s
+.PHONY : Transicion.s
 
 # target to generate assembly for a file
-SetTransiciones.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetTransiciones.cpp.s
-.PHONY : SetTransiciones.cpp.s
+Transicion.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Transicion.cpp.s
+.PHONY : Transicion.cpp.s
 
 src/AP.o: src/AP.cpp.o
 
@@ -231,6 +231,33 @@ src/SetNodos.cpp.s:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.s
 .PHONY : src/SetNodos.cpp.s
 
+src/SetTransiciones.o: src/SetTransiciones.cpp.o
+
+.PHONY : src/SetTransiciones.o
+
+# target to build an object file
+src/SetTransiciones.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetTransiciones.cpp.o
+.PHONY : src/SetTransiciones.cpp.o
+
+src/SetTransiciones.i: src/SetTransiciones.cpp.i
+
+.PHONY : src/SetTransiciones.i
+
+# target to preprocess a source file
+src/SetTransiciones.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetTransiciones.cpp.i
+.PHONY : src/SetTransiciones.cpp.i
+
+src/SetTransiciones.s: src/SetTransiciones.cpp.s
+
+.PHONY : src/SetTransiciones.s
+
+# target to generate assembly for a file
+src/SetTransiciones.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetTransiciones.cpp.s
+.PHONY : src/SetTransiciones.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -267,9 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AP"
-	@echo "... SetTransiciones.o"
-	@echo "... SetTransiciones.i"
-	@echo "... SetTransiciones.s"
+	@echo "... Transicion.o"
+	@echo "... Transicion.i"
+	@echo "... Transicion.s"
 	@echo "... src/AP.o"
 	@echo "... src/AP.i"
 	@echo "... src/AP.s"
@@ -279,6 +306,9 @@ help:
 	@echo "... src/SetNodos.o"
 	@echo "... src/SetNodos.i"
 	@echo "... src/SetNodos.s"
+	@echo "... src/SetTransiciones.o"
+	@echo "... src/SetTransiciones.i"
+	@echo "... src/SetTransiciones.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
