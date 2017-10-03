@@ -123,32 +123,32 @@ AP/fast:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/build
 .PHONY : AP/fast
 
-SetNodos.o: SetNodos.cpp.o
+Nodo.o: Nodo.cpp.o
 
-.PHONY : SetNodos.o
+.PHONY : Nodo.o
 
 # target to build an object file
-SetNodos.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetNodos.cpp.o
-.PHONY : SetNodos.cpp.o
+Nodo.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Nodo.cpp.o
+.PHONY : Nodo.cpp.o
 
-SetNodos.i: SetNodos.cpp.i
+Nodo.i: Nodo.cpp.i
 
-.PHONY : SetNodos.i
+.PHONY : Nodo.i
 
 # target to preprocess a source file
-SetNodos.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetNodos.cpp.i
-.PHONY : SetNodos.cpp.i
+Nodo.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Nodo.cpp.i
+.PHONY : Nodo.cpp.i
 
-SetNodos.s: SetNodos.cpp.s
+Nodo.s: Nodo.cpp.s
 
-.PHONY : SetNodos.s
+.PHONY : Nodo.s
 
 # target to generate assembly for a file
-SetNodos.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetNodos.cpp.s
-.PHONY : SetNodos.cpp.s
+Nodo.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Nodo.cpp.s
+.PHONY : Nodo.cpp.s
 
 src/AP.o: src/AP.cpp.o
 
@@ -176,6 +176,33 @@ src/AP.s: src/AP.cpp.s
 src/AP.cpp.s:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/AP.cpp.s
 .PHONY : src/AP.cpp.s
+
+src/SetNodos.o: src/SetNodos.cpp.o
+
+.PHONY : src/SetNodos.o
+
+# target to build an object file
+src/SetNodos.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.o
+.PHONY : src/SetNodos.cpp.o
+
+src/SetNodos.i: src/SetNodos.cpp.i
+
+.PHONY : src/SetNodos.i
+
+# target to preprocess a source file
+src/SetNodos.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.i
+.PHONY : src/SetNodos.cpp.i
+
+src/SetNodos.s: src/SetNodos.cpp.s
+
+.PHONY : src/SetNodos.s
+
+# target to generate assembly for a file
+src/SetNodos.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.s
+.PHONY : src/SetNodos.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -213,12 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AP"
-	@echo "... SetNodos.o"
-	@echo "... SetNodos.i"
-	@echo "... SetNodos.s"
+	@echo "... Nodo.o"
+	@echo "... Nodo.i"
+	@echo "... Nodo.s"
 	@echo "... src/AP.o"
 	@echo "... src/AP.i"
 	@echo "... src/AP.s"
+	@echo "... src/SetNodos.o"
+	@echo "... src/SetNodos.i"
+	@echo "... src/SetNodos.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

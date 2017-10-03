@@ -105,45 +105,71 @@ CMakeFiles/AP.dir/src/AP.cpp.o.provides: CMakeFiles/AP.dir/src/AP.cpp.o.requires
 CMakeFiles/AP.dir/src/AP.cpp.o.provides.build: CMakeFiles/AP.dir/src/AP.cpp.o
 
 
-CMakeFiles/AP.dir/SetNodos.cpp.o: CMakeFiles/AP.dir/flags.make
-CMakeFiles/AP.dir/SetNodos.cpp.o: ../SetNodos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AP.dir/SetNodos.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/SetNodos.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/SetNodos.cpp
+CMakeFiles/AP.dir/src/SetNodos.cpp.o: CMakeFiles/AP.dir/flags.make
+CMakeFiles/AP.dir/src/SetNodos.cpp.o: ../src/SetNodos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AP.dir/src/SetNodos.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/src/SetNodos.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/src/SetNodos.cpp
 
-CMakeFiles/AP.dir/SetNodos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/SetNodos.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/SetNodos.cpp > CMakeFiles/AP.dir/SetNodos.cpp.i
+CMakeFiles/AP.dir/src/SetNodos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/src/SetNodos.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/src/SetNodos.cpp > CMakeFiles/AP.dir/src/SetNodos.cpp.i
 
-CMakeFiles/AP.dir/SetNodos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/SetNodos.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/SetNodos.cpp -o CMakeFiles/AP.dir/SetNodos.cpp.s
+CMakeFiles/AP.dir/src/SetNodos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/src/SetNodos.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/src/SetNodos.cpp -o CMakeFiles/AP.dir/src/SetNodos.cpp.s
 
-CMakeFiles/AP.dir/SetNodos.cpp.o.requires:
+CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires:
 
-.PHONY : CMakeFiles/AP.dir/SetNodos.cpp.o.requires
+.PHONY : CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires
 
-CMakeFiles/AP.dir/SetNodos.cpp.o.provides: CMakeFiles/AP.dir/SetNodos.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/SetNodos.cpp.o.provides.build
-.PHONY : CMakeFiles/AP.dir/SetNodos.cpp.o.provides
+CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides: CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides.build
+.PHONY : CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides
 
-CMakeFiles/AP.dir/SetNodos.cpp.o.provides.build: CMakeFiles/AP.dir/SetNodos.cpp.o
+CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides.build: CMakeFiles/AP.dir/src/SetNodos.cpp.o
+
+
+CMakeFiles/AP.dir/Nodo.cpp.o: CMakeFiles/AP.dir/flags.make
+CMakeFiles/AP.dir/Nodo.cpp.o: ../Nodo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AP.dir/Nodo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/Nodo.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/Nodo.cpp
+
+CMakeFiles/AP.dir/Nodo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/Nodo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/Nodo.cpp > CMakeFiles/AP.dir/Nodo.cpp.i
+
+CMakeFiles/AP.dir/Nodo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/Nodo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/Nodo.cpp -o CMakeFiles/AP.dir/Nodo.cpp.s
+
+CMakeFiles/AP.dir/Nodo.cpp.o.requires:
+
+.PHONY : CMakeFiles/AP.dir/Nodo.cpp.o.requires
+
+CMakeFiles/AP.dir/Nodo.cpp.o.provides: CMakeFiles/AP.dir/Nodo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Nodo.cpp.o.provides.build
+.PHONY : CMakeFiles/AP.dir/Nodo.cpp.o.provides
+
+CMakeFiles/AP.dir/Nodo.cpp.o.provides.build: CMakeFiles/AP.dir/Nodo.cpp.o
 
 
 # Object files for target AP
 AP_OBJECTS = \
 "CMakeFiles/AP.dir/src/main.cpp.o" \
 "CMakeFiles/AP.dir/src/AP.cpp.o" \
-"CMakeFiles/AP.dir/SetNodos.cpp.o"
+"CMakeFiles/AP.dir/src/SetNodos.cpp.o" \
+"CMakeFiles/AP.dir/Nodo.cpp.o"
 
 # External object files for target AP
 AP_EXTERNAL_OBJECTS =
 
 AP: CMakeFiles/AP.dir/src/main.cpp.o
 AP: CMakeFiles/AP.dir/src/AP.cpp.o
-AP: CMakeFiles/AP.dir/SetNodos.cpp.o
+AP: CMakeFiles/AP.dir/src/SetNodos.cpp.o
+AP: CMakeFiles/AP.dir/Nodo.cpp.o
 AP: CMakeFiles/AP.dir/build.make
 AP: CMakeFiles/AP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable AP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,7 +179,8 @@ CMakeFiles/AP.dir/build: AP
 
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/main.cpp.o.requires
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/AP.cpp.o.requires
-CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/SetNodos.cpp.o.requires
+CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires
+CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/Nodo.cpp.o.requires
 
 .PHONY : CMakeFiles/AP.dir/requires
 

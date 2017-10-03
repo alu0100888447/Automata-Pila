@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/AP.dir/src/main.cpp.o"
   "CMakeFiles/AP.dir/src/AP.cpp.o"
-  "CMakeFiles/AP.dir/SetNodos.cpp.o"
+  "CMakeFiles/AP.dir/src/SetNodos.cpp.o"
+  "CMakeFiles/AP.dir/Nodo.cpp.o"
   "AP.pdb"
   "AP"
 )
