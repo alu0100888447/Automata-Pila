@@ -6,7 +6,6 @@
 #define AP_AP_H
 
 #include "SetNodos.h"
-#include "SetTransiciones.h"
 
 class AP {
 public:

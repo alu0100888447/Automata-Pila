@@ -5,7 +5,10 @@
 #ifndef AP_NODO_H
 #define AP_NODO_H
 
+#include "SetTransiciones.h"
+
 #include <iostream>
+#include <string>
 
 using namespace std;
 
