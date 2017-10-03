@@ -18,6 +18,7 @@ private:
     SetTransiciones transiciones_;
 public:
     Nodo();
+    Nodo(const Nodo &cp);
     virtual ~Nodo();
     const string &getId_() const;
     const SetTransiciones &getTransiciones_() const;

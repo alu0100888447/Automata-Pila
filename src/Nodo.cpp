@@ -8,6 +8,10 @@ Nodo::Nodo() {
 
 }
 
+Nodo::Nodo(const Nodo &cp) {
+
+}
+
 Nodo::~Nodo() {
 
 }
@@ -27,3 +31,5 @@ void Nodo::setId_(const string &id_) {
 void Nodo::setTransiciones_(const SetTransiciones &transiciones_) {
     Nodo::transiciones_ = transiciones_;
 }
+
+
