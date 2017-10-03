@@ -84,7 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/main.cpp">
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/AP.cpp">
+			<Option target="AP"/>
+		</Unit>
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/AP.h">
+			<Option target="AP"/>
+		</Unit>
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/main.cpp">
 			<Option target="AP"/>
 		</Unit>
 		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/CMakeLists.txt">

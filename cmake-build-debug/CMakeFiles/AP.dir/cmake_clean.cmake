@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/AP.dir/main.cpp.o"
+  "CMakeFiles/AP.dir/src/main.cpp.o"
+  "CMakeFiles/AP.dir/AP.cpp.o"
   "AP.pdb"
   "AP"
 )

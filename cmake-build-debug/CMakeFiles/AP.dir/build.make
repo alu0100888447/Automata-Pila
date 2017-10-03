@@ -57,41 +57,67 @@ include CMakeFiles/AP.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AP.dir/flags.make
 
-CMakeFiles/AP.dir/main.cpp.o: CMakeFiles/AP.dir/flags.make
-CMakeFiles/AP.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AP.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/main.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/main.cpp
+CMakeFiles/AP.dir/src/main.cpp.o: CMakeFiles/AP.dir/flags.make
+CMakeFiles/AP.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AP.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/src/main.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/src/main.cpp
 
-CMakeFiles/AP.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/main.cpp > CMakeFiles/AP.dir/main.cpp.i
+CMakeFiles/AP.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/src/main.cpp > CMakeFiles/AP.dir/src/main.cpp.i
 
-CMakeFiles/AP.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/main.cpp -o CMakeFiles/AP.dir/main.cpp.s
+CMakeFiles/AP.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/src/main.cpp -o CMakeFiles/AP.dir/src/main.cpp.s
 
-CMakeFiles/AP.dir/main.cpp.o.requires:
+CMakeFiles/AP.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/AP.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/AP.dir/src/main.cpp.o.requires
 
-CMakeFiles/AP.dir/main.cpp.o.provides: CMakeFiles/AP.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/AP.dir/main.cpp.o.provides
+CMakeFiles/AP.dir/src/main.cpp.o.provides: CMakeFiles/AP.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/AP.dir/src/main.cpp.o.provides
 
-CMakeFiles/AP.dir/main.cpp.o.provides.build: CMakeFiles/AP.dir/main.cpp.o
+CMakeFiles/AP.dir/src/main.cpp.o.provides.build: CMakeFiles/AP.dir/src/main.cpp.o
+
+
+CMakeFiles/AP.dir/AP.cpp.o: CMakeFiles/AP.dir/flags.make
+CMakeFiles/AP.dir/AP.cpp.o: ../AP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AP.dir/AP.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/AP.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/AP.cpp
+
+CMakeFiles/AP.dir/AP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/AP.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/AP.cpp > CMakeFiles/AP.dir/AP.cpp.i
+
+CMakeFiles/AP.dir/AP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/AP.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/AP.cpp -o CMakeFiles/AP.dir/AP.cpp.s
+
+CMakeFiles/AP.dir/AP.cpp.o.requires:
+
+.PHONY : CMakeFiles/AP.dir/AP.cpp.o.requires
+
+CMakeFiles/AP.dir/AP.cpp.o.provides: CMakeFiles/AP.dir/AP.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/AP.cpp.o.provides.build
+.PHONY : CMakeFiles/AP.dir/AP.cpp.o.provides
+
+CMakeFiles/AP.dir/AP.cpp.o.provides.build: CMakeFiles/AP.dir/AP.cpp.o
 
 
 # Object files for target AP
 AP_OBJECTS = \
-"CMakeFiles/AP.dir/main.cpp.o"
+"CMakeFiles/AP.dir/src/main.cpp.o" \
+"CMakeFiles/AP.dir/AP.cpp.o"
 
 # External object files for target AP
 AP_EXTERNAL_OBJECTS =
 
-AP: CMakeFiles/AP.dir/main.cpp.o
+AP: CMakeFiles/AP.dir/src/main.cpp.o
+AP: CMakeFiles/AP.dir/AP.cpp.o
 AP: CMakeFiles/AP.dir/build.make
 AP: CMakeFiles/AP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable AP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -99,7 +125,8 @@ CMakeFiles/AP.dir/build: AP
 
 .PHONY : CMakeFiles/AP.dir/build
 
-CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/main.cpp.o.requires
+CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/main.cpp.o.requires
+CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/AP.cpp.o.requires
 
 .PHONY : CMakeFiles/AP.dir/requires
 

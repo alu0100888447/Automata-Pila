@@ -123,32 +123,59 @@ AP/fast:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/build
 .PHONY : AP/fast
 
-main.o: main.cpp.o
+AP.o: AP.cpp.o
 
-.PHONY : main.o
+.PHONY : AP.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/main.cpp.o
-.PHONY : main.cpp.o
+AP.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/AP.cpp.o
+.PHONY : AP.cpp.o
 
-main.i: main.cpp.i
+AP.i: AP.cpp.i
 
-.PHONY : main.i
+.PHONY : AP.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/main.cpp.i
-.PHONY : main.cpp.i
+AP.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/AP.cpp.i
+.PHONY : AP.cpp.i
 
-main.s: main.cpp.s
+AP.s: AP.cpp.s
 
-.PHONY : main.s
+.PHONY : AP.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/main.cpp.s
-.PHONY : main.cpp.s
+AP.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/AP.cpp.s
+.PHONY : AP.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AP"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... AP.o"
+	@echo "... AP.i"
+	@echo "... AP.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
