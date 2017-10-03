@@ -5,6 +5,7 @@
 #ifndef AP_SETTRANSICIONES_H
 #define AP_SETTRANSICIONES_H
 
+#include "Transicion.h"
 
 class SetTransiciones {
 

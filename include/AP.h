@@ -5,16 +5,8 @@
 #ifndef AP_AP_H
 #define AP_AP_H
 
-#include <iostream>
-#include <stack>
-#include <fstream>
-#include <cstdio>
-#include <vector>
-#include <set>
-#include <iterator>
-#include <string>
-
-using namespace std;
+#include "SetNodos.h"
+#include "SetTransiciones.h"
 
 class AP {
 public:

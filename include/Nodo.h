@@ -5,6 +5,9 @@
 #ifndef AP_NODO_H
 #define AP_NODO_H
 
+#include <iostream>
+
+using namespace std;
 
 class Nodo {
 

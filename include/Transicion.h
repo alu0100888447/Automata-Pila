@@ -5,6 +5,9 @@
 #ifndef AP_TRANSICION_H
 #define AP_TRANSICION_H
 
+#include <iostream>
+
+using namespace std;
 
 class Transicion {
 
