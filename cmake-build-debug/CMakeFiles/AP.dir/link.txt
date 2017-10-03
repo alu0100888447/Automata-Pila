@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/AP.dir/main.cpp.o  -o AP 

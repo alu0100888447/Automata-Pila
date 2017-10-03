@@ -1,0 +1,3 @@
+/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles/AP.dir
