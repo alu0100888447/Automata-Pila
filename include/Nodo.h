@@ -25,6 +25,9 @@ public:
     const SetTransiciones &getTransiciones_() const;
     void setId_(const string &id_);
     void setTransiciones_(const SetTransiciones &transiciones_);
+    void operator=(const Nodo &cp);
+
+    friend ostream& operator<<(ostream &out, const Nodo &cp);
 };
 
 

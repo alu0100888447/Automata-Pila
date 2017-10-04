@@ -123,33 +123,6 @@ AP/fast:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/build
 .PHONY : AP/fast
 
-Transicion.o: Transicion.cpp.o
-
-.PHONY : Transicion.o
-
-# target to build an object file
-Transicion.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Transicion.cpp.o
-.PHONY : Transicion.cpp.o
-
-Transicion.i: Transicion.cpp.i
-
-.PHONY : Transicion.i
-
-# target to preprocess a source file
-Transicion.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Transicion.cpp.i
-.PHONY : Transicion.cpp.i
-
-Transicion.s: Transicion.cpp.s
-
-.PHONY : Transicion.s
-
-# target to generate assembly for a file
-Transicion.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Transicion.cpp.s
-.PHONY : Transicion.cpp.s
-
 src/AP.o: src/AP.cpp.o
 
 .PHONY : src/AP.o
@@ -258,6 +231,33 @@ src/SetTransiciones.cpp.s:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetTransiciones.cpp.s
 .PHONY : src/SetTransiciones.cpp.s
 
+src/Transicion.o: src/Transicion.cpp.o
+
+.PHONY : src/Transicion.o
+
+# target to build an object file
+src/Transicion.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Transicion.cpp.o
+.PHONY : src/Transicion.cpp.o
+
+src/Transicion.i: src/Transicion.cpp.i
+
+.PHONY : src/Transicion.i
+
+# target to preprocess a source file
+src/Transicion.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Transicion.cpp.i
+.PHONY : src/Transicion.cpp.i
+
+src/Transicion.s: src/Transicion.cpp.s
+
+.PHONY : src/Transicion.s
+
+# target to generate assembly for a file
+src/Transicion.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Transicion.cpp.s
+.PHONY : src/Transicion.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -294,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AP"
-	@echo "... Transicion.o"
-	@echo "... Transicion.i"
-	@echo "... Transicion.s"
 	@echo "... src/AP.o"
 	@echo "... src/AP.i"
 	@echo "... src/AP.s"
@@ -309,6 +306,9 @@ help:
 	@echo "... src/SetTransiciones.o"
 	@echo "... src/SetTransiciones.i"
 	@echo "... src/SetTransiciones.s"
+	@echo "... src/Transicion.o"
+	@echo "... src/Transicion.i"
+	@echo "... src/Transicion.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

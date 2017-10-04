@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/AP.dir/src/main.cpp.o CMakeFiles/AP.dir/src/AP.cpp.o CMakeFiles/AP.dir/src/SetNodos.cpp.o CMakeFiles/AP.dir/src/Nodo.cpp.o CMakeFiles/AP.dir/src/SetTransiciones.cpp.o CMakeFiles/AP.dir/Transicion.cpp.o  -o AP 
+/usr/bin/c++  -g   CMakeFiles/AP.dir/src/main.cpp.o CMakeFiles/AP.dir/src/AP.cpp.o CMakeFiles/AP.dir/src/SetNodos.cpp.o CMakeFiles/AP.dir/src/Nodo.cpp.o CMakeFiles/AP.dir/src/SetTransiciones.cpp.o CMakeFiles/AP.dir/src/Transicion.cpp.o  -o AP 

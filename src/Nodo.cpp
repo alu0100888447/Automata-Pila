@@ -9,7 +9,8 @@ Nodo::Nodo() {
 }
 
 Nodo::Nodo(const Nodo &cp) {
-
+    id_ = cp.getId_();
+    transiciones_ = cp.getTransiciones_();
 }
 
 Nodo::Nodo(SetTransiciones transiciones, string id) {
@@ -34,6 +35,14 @@ void Nodo::setId_(const string &id_) {
 
 void Nodo::setTransiciones_(const SetTransiciones &transiciones_) {
     Nodo::transiciones_ = transiciones_;
+}
+
+void Nodo::operator=(const Nodo& cp) {
+
+}
+
+ostream &operator<<(ostream &out, const Nodo &cp) {
+    return <#initializer#>;
 }
 
 

@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/AP.dir/src/SetNodos.cpp.o"
   "CMakeFiles/AP.dir/src/Nodo.cpp.o"
   "CMakeFiles/AP.dir/src/SetTransiciones.cpp.o"
-  "CMakeFiles/AP.dir/Transicion.cpp.o"
+  "CMakeFiles/AP.dir/src/Transicion.cpp.o"
   "AP.pdb"
   "AP"
 )

@@ -8,6 +8,8 @@
 #include "SetNodos.h"
 
 class AP {
+private:
+
 public:
 
     AP();

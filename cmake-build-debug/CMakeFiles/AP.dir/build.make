@@ -177,28 +177,28 @@ CMakeFiles/AP.dir/src/SetTransiciones.cpp.o.provides: CMakeFiles/AP.dir/src/SetT
 CMakeFiles/AP.dir/src/SetTransiciones.cpp.o.provides.build: CMakeFiles/AP.dir/src/SetTransiciones.cpp.o
 
 
-CMakeFiles/AP.dir/Transicion.cpp.o: CMakeFiles/AP.dir/flags.make
-CMakeFiles/AP.dir/Transicion.cpp.o: ../Transicion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AP.dir/Transicion.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/Transicion.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/Transicion.cpp
+CMakeFiles/AP.dir/src/Transicion.cpp.o: CMakeFiles/AP.dir/flags.make
+CMakeFiles/AP.dir/src/Transicion.cpp.o: ../src/Transicion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AP.dir/src/Transicion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/src/Transicion.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/src/Transicion.cpp
 
-CMakeFiles/AP.dir/Transicion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/Transicion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/Transicion.cpp > CMakeFiles/AP.dir/Transicion.cpp.i
+CMakeFiles/AP.dir/src/Transicion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/src/Transicion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/src/Transicion.cpp > CMakeFiles/AP.dir/src/Transicion.cpp.i
 
-CMakeFiles/AP.dir/Transicion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/Transicion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/Transicion.cpp -o CMakeFiles/AP.dir/Transicion.cpp.s
+CMakeFiles/AP.dir/src/Transicion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/src/Transicion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/src/Transicion.cpp -o CMakeFiles/AP.dir/src/Transicion.cpp.s
 
-CMakeFiles/AP.dir/Transicion.cpp.o.requires:
+CMakeFiles/AP.dir/src/Transicion.cpp.o.requires:
 
-.PHONY : CMakeFiles/AP.dir/Transicion.cpp.o.requires
+.PHONY : CMakeFiles/AP.dir/src/Transicion.cpp.o.requires
 
-CMakeFiles/AP.dir/Transicion.cpp.o.provides: CMakeFiles/AP.dir/Transicion.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/Transicion.cpp.o.provides.build
-.PHONY : CMakeFiles/AP.dir/Transicion.cpp.o.provides
+CMakeFiles/AP.dir/src/Transicion.cpp.o.provides: CMakeFiles/AP.dir/src/Transicion.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Transicion.cpp.o.provides.build
+.PHONY : CMakeFiles/AP.dir/src/Transicion.cpp.o.provides
 
-CMakeFiles/AP.dir/Transicion.cpp.o.provides.build: CMakeFiles/AP.dir/Transicion.cpp.o
+CMakeFiles/AP.dir/src/Transicion.cpp.o.provides.build: CMakeFiles/AP.dir/src/Transicion.cpp.o
 
 
 # Object files for target AP
@@ -208,7 +208,7 @@ AP_OBJECTS = \
 "CMakeFiles/AP.dir/src/SetNodos.cpp.o" \
 "CMakeFiles/AP.dir/src/Nodo.cpp.o" \
 "CMakeFiles/AP.dir/src/SetTransiciones.cpp.o" \
-"CMakeFiles/AP.dir/Transicion.cpp.o"
+"CMakeFiles/AP.dir/src/Transicion.cpp.o"
 
 # External object files for target AP
 AP_EXTERNAL_OBJECTS =
@@ -218,7 +218,7 @@ AP: CMakeFiles/AP.dir/src/AP.cpp.o
 AP: CMakeFiles/AP.dir/src/SetNodos.cpp.o
 AP: CMakeFiles/AP.dir/src/Nodo.cpp.o
 AP: CMakeFiles/AP.dir/src/SetTransiciones.cpp.o
-AP: CMakeFiles/AP.dir/Transicion.cpp.o
+AP: CMakeFiles/AP.dir/src/Transicion.cpp.o
 AP: CMakeFiles/AP.dir/build.make
 AP: CMakeFiles/AP.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable AP"
@@ -234,7 +234,7 @@ CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/AP.cpp.o.requires
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/Nodo.cpp.o.requires
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/SetTransiciones.cpp.o.requires
-CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/Transicion.cpp.o.requires
+CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/Transicion.cpp.o.requires
 
 .PHONY : CMakeFiles/AP.dir/requires
 
