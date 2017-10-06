@@ -7,7 +7,7 @@
 
 #include "Estado.h"
 
-class SetNodos {
+class SetEstados {
 
 };
 

@@ -12,22 +12,22 @@
 
 using namespace std;
 
-class Nodo {
+class Estado {
 private:
     string id_;
     SetTransiciones transiciones_;
 public:
-    Nodo();
-    Nodo(const Nodo &cp);
-    Nodo(SetTransiciones transiciones, string id);
-    virtual ~Nodo();
+    Estado();
+    Estado(const Estado &cp);
+    Estado(SetTransiciones transiciones, string id);
+    virtual ~Estado();
     const string &getId_() const;
     const SetTransiciones &getTransiciones_() const;
     void setId_(const string &id_);
     void setTransiciones_(const SetTransiciones &transiciones_);
-    void operator=(const Nodo &cp);
+    void operator=(const Estado &cp);
 
-    friend ostream& operator<<(ostream &out, const Nodo &cp);
+    friend ostream& operator<<(ostream &out, const Estado &cp);
 };
 
 

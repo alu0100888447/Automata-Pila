@@ -4,44 +4,44 @@
 
 #include "../include/Estado.h"
 
-Nodo::Nodo() {
+Estado::Estado() {
 
 }
 
-Nodo::Nodo(const Nodo &cp) {
+Estado::Estado(const Estado &cp) {
     id_ = cp.getId_();
     transiciones_ = cp.getTransiciones_();
 }
 
-Nodo::Nodo(SetTransiciones transiciones, string id) {
+Estado::Estado(SetTransiciones transiciones, string id) {
 
 }
 
-Nodo::~Nodo() {
+Estado::~Estado() {
 
 }
 
-const string Nodo::getId_() const {
+const string Estado::getId_() const {
     return id_;
 }
 
-const SetTransiciones Nodo::getTransiciones_() const {
+const SetTransiciones Estado::getTransiciones_() const {
     return transiciones_;
 }
 
-void Nodo::setId_(const string &id_) {
-    Nodo::id_ = id_;
+void Estado::setId_(const string &id_) {
+    Estado::id_ = id_;
 }
 
-void Nodo::setTransiciones_(const SetTransiciones &transiciones_) {
-    Nodo::transiciones_ = transiciones_;
+void Estado::setTransiciones_(const SetTransiciones &transiciones_) {
+    Estado::transiciones_ = transiciones_;
 }
 
-void Nodo::operator=(const Nodo& cp) {
+void Estado::operator=(const Estado& cp) {
 
 }
 
-ostream &operator<<(ostream &out, const Nodo &cp) {
+ostream &operator<<(ostream &out, const Estado &cp) {
     return <#initializer#>;
 }
 
