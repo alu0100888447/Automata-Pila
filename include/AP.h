@@ -5,7 +5,7 @@
 #ifndef AP_AP_H
 #define AP_AP_H
 
-#include "SetNodos.h"
+#include "SetEstados.h"
 
 class AP {
 private:

@@ -5,7 +5,7 @@
 #ifndef AP_SETNODOS_H
 #define AP_SETNODOS_H
 
-#include "Nodo.h"
+#include "Estado.h"
 
 class SetNodos {
 

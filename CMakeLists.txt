@@ -3,5 +3,5 @@ project(AP)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES src/main.cpp src/AP.cpp include/AP.h src/SetNodos.cpp include/SetNodos.h src/Nodo.cpp include/Nodo.h src/SetTransiciones.cpp include/SetTransiciones.h src/Transicion.cpp include/Transicion.h)
+set(SOURCE_FILES src/main.cpp src/AP.cpp include/AP.h src/SetEstados.cpp include/SetEstados.h src/Estado.cpp include/Estado.h src/SetTransiciones.cpp include/SetTransiciones.h src/Transicion.cpp include/Transicion.h)
 add_executable(AP ${SOURCE_FILES})

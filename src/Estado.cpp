@@ -2,7 +2,7 @@
 // Created by izm20 on 3/10/17.
 //
 
-#include "../include/Nodo.h"
+#include "../include/Estado.h"
 
 Nodo::Nodo() {
 
