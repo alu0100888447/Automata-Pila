@@ -4,14 +4,18 @@
 
 #include "../include/SetTransiciones.h"
 
-SetTransiciones::SetTransiciones() {}
+SetTransiciones::SetTransiciones() {
+    numeroTransiciones_ = 0;
+}
 
-SetTransiciones::SetTransiciones(set<Transicion> Transiciones) {
-
+SetTransiciones::SetTransiciones(set<Transicion> Transiciones, int numeroTransiciones) {
+    setConjuntoTransiciones_(Transiciones);
+    setNumeroTransiciones_(numeroTransiciones);
 }
 
 SetTransiciones::SetTransiciones(const SetTransiciones &cp) {
-
+    setConjuntoTransiciones_(cp.getConjuntoTransiciones_());
+    setNumeroTransiciones_(cp.getNumeroTransiciones_());
 }
 
 const set<Transicion> &SetTransiciones::getConjuntoTransiciones_() const {
@@ -28,4 +32,12 @@ int SetTransiciones::getNumeroTransiciones_() const {
 
 void SetTransiciones::setNumeroTransiciones_(int numeroTransiciones_) {
     SetTransiciones::numeroTransiciones_ = numeroTransiciones_;
+}
+
+SetTransiciones &SetTransiciones::operator=(const SetTransiciones &cp) {
+    if(this != &cp) {
+        setConjuntoTransiciones_(cp.getConjuntoTransiciones_());
+        setNumeroTransiciones_(cp.getNumeroTransiciones_());
+    }
+    return *this;
 }

@@ -13,16 +13,13 @@ private:
     int numeroTransiciones_;
 public:
     SetTransiciones();
-    SetTransiciones(set<Transicion> Transiciones);
+    SetTransiciones(set<Transicion> Transiciones, int numerTransiciones);
     SetTransiciones(const SetTransiciones &cp);
-
     const set<Transicion> &getConjuntoTransiciones_() const;
-
     void setConjuntoTransiciones_(const set<Transicion> &conjuntoTransiciones_);
-
     int getNumeroTransiciones_() const;
-
     void setNumeroTransiciones_(int numeroTransiciones_);
+    SetTransiciones& operator=(const SetTransiciones &cp);
 
 };
 

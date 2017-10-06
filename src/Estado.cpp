@@ -15,8 +15,8 @@ Estado::Estado(string id, SetTransiciones transiciones) {
 }
 
 Estado::Estado(const Estado &cp) {
-    id_ = cp.getId_();
-    transiciones_ = cp.getTransiciones_();
+    setId_(cp.getId_());
+    setTransiciones_(cp.getTransiciones_());
 }
 
 Estado::~Estado() {
