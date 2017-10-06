@@ -16,13 +16,23 @@ class Transicion {
 private:
     string estadoSiguiente_;
     char entrada_;
-    char cabezaPila;
-    string meterPila;
+    char cabezaPila_;
+    string meterPila_;
 public:
     Transicion();
     Transicion(string estadoSiguiente, char entrada, char cabezaPila, string meterPila);
     Transicion(const Transicion &cp);
     virtual ~Transicion();
+
+    const string &getEstadoSiguiente_() const;
+    void setEstadoSiguiente_(const string &estadoSiguiente_);
+    char getEntrada_() const;
+    void setEntrada_(char entrada_);
+    char getCabezaPila_() const;
+    void setCabezaPila_(char cabezaPila_);
+    const string &getMeterPila_() const;
+    void setMeterPila_(const string &meterPila_);
+
     Transicion& operator=(const Transicion &cp);
     bool operator==(const Transicion &cp) const;
 

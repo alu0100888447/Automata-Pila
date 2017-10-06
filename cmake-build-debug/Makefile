@@ -150,59 +150,59 @@ src/AP.cpp.s:
 	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/AP.cpp.s
 .PHONY : src/AP.cpp.s
 
-src/Nodo.o: src/Nodo.cpp.o
+src/Estado.o: src/Estado.cpp.o
 
-.PHONY : src/Nodo.o
-
-# target to build an object file
-src/Nodo.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Nodo.cpp.o
-.PHONY : src/Nodo.cpp.o
-
-src/Nodo.i: src/Nodo.cpp.i
-
-.PHONY : src/Nodo.i
-
-# target to preprocess a source file
-src/Nodo.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Nodo.cpp.i
-.PHONY : src/Nodo.cpp.i
-
-src/Nodo.s: src/Nodo.cpp.s
-
-.PHONY : src/Nodo.s
-
-# target to generate assembly for a file
-src/Nodo.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Nodo.cpp.s
-.PHONY : src/Nodo.cpp.s
-
-src/SetNodos.o: src/SetNodos.cpp.o
-
-.PHONY : src/SetNodos.o
+.PHONY : src/Estado.o
 
 # target to build an object file
-src/SetNodos.cpp.o:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.o
-.PHONY : src/SetNodos.cpp.o
+src/Estado.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Estado.cpp.o
+.PHONY : src/Estado.cpp.o
 
-src/SetNodos.i: src/SetNodos.cpp.i
+src/Estado.i: src/Estado.cpp.i
 
-.PHONY : src/SetNodos.i
+.PHONY : src/Estado.i
 
 # target to preprocess a source file
-src/SetNodos.cpp.i:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.i
-.PHONY : src/SetNodos.cpp.i
+src/Estado.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Estado.cpp.i
+.PHONY : src/Estado.cpp.i
 
-src/SetNodos.s: src/SetNodos.cpp.s
+src/Estado.s: src/Estado.cpp.s
 
-.PHONY : src/SetNodos.s
+.PHONY : src/Estado.s
 
 # target to generate assembly for a file
-src/SetNodos.cpp.s:
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.s
-.PHONY : src/SetNodos.cpp.s
+src/Estado.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Estado.cpp.s
+.PHONY : src/Estado.cpp.s
+
+src/SetEstados.o: src/SetEstados.cpp.o
+
+.PHONY : src/SetEstados.o
+
+# target to build an object file
+src/SetEstados.cpp.o:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetEstados.cpp.o
+.PHONY : src/SetEstados.cpp.o
+
+src/SetEstados.i: src/SetEstados.cpp.i
+
+.PHONY : src/SetEstados.i
+
+# target to preprocess a source file
+src/SetEstados.cpp.i:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetEstados.cpp.i
+.PHONY : src/SetEstados.cpp.i
+
+src/SetEstados.s: src/SetEstados.cpp.s
+
+.PHONY : src/SetEstados.s
+
+# target to generate assembly for a file
+src/SetEstados.cpp.s:
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetEstados.cpp.s
+.PHONY : src/SetEstados.cpp.s
 
 src/SetTransiciones.o: src/SetTransiciones.cpp.o
 
@@ -297,12 +297,12 @@ help:
 	@echo "... src/AP.o"
 	@echo "... src/AP.i"
 	@echo "... src/AP.s"
-	@echo "... src/Nodo.o"
-	@echo "... src/Nodo.i"
-	@echo "... src/Nodo.s"
-	@echo "... src/SetNodos.o"
-	@echo "... src/SetNodos.i"
-	@echo "... src/SetNodos.s"
+	@echo "... src/Estado.o"
+	@echo "... src/Estado.i"
+	@echo "... src/Estado.s"
+	@echo "... src/SetEstados.o"
+	@echo "... src/SetEstados.i"
+	@echo "... src/SetEstados.s"
 	@echo "... src/SetTransiciones.o"
 	@echo "... src/SetTransiciones.i"
 	@echo "... src/SetTransiciones.s"

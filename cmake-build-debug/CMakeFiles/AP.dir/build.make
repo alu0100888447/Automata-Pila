@@ -105,52 +105,52 @@ CMakeFiles/AP.dir/src/AP.cpp.o.provides: CMakeFiles/AP.dir/src/AP.cpp.o.requires
 CMakeFiles/AP.dir/src/AP.cpp.o.provides.build: CMakeFiles/AP.dir/src/AP.cpp.o
 
 
-CMakeFiles/AP.dir/src/SetNodos.cpp.o: CMakeFiles/AP.dir/flags.make
-CMakeFiles/AP.dir/src/SetNodos.cpp.o: ../src/SetNodos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AP.dir/src/SetNodos.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/src/SetNodos.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/src/SetNodos.cpp
+CMakeFiles/AP.dir/src/SetEstados.cpp.o: CMakeFiles/AP.dir/flags.make
+CMakeFiles/AP.dir/src/SetEstados.cpp.o: ../src/SetEstados.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AP.dir/src/SetEstados.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/src/SetEstados.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/src/SetEstados.cpp
 
-CMakeFiles/AP.dir/src/SetNodos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/src/SetNodos.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/src/SetNodos.cpp > CMakeFiles/AP.dir/src/SetNodos.cpp.i
+CMakeFiles/AP.dir/src/SetEstados.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/src/SetEstados.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/src/SetEstados.cpp > CMakeFiles/AP.dir/src/SetEstados.cpp.i
 
-CMakeFiles/AP.dir/src/SetNodos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/src/SetNodos.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/src/SetNodos.cpp -o CMakeFiles/AP.dir/src/SetNodos.cpp.s
+CMakeFiles/AP.dir/src/SetEstados.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/src/SetEstados.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/src/SetEstados.cpp -o CMakeFiles/AP.dir/src/SetEstados.cpp.s
 
-CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires:
+CMakeFiles/AP.dir/src/SetEstados.cpp.o.requires:
 
-.PHONY : CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires
+.PHONY : CMakeFiles/AP.dir/src/SetEstados.cpp.o.requires
 
-CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides: CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides.build
-.PHONY : CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides
+CMakeFiles/AP.dir/src/SetEstados.cpp.o.provides: CMakeFiles/AP.dir/src/SetEstados.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/SetEstados.cpp.o.provides.build
+.PHONY : CMakeFiles/AP.dir/src/SetEstados.cpp.o.provides
 
-CMakeFiles/AP.dir/src/SetNodos.cpp.o.provides.build: CMakeFiles/AP.dir/src/SetNodos.cpp.o
+CMakeFiles/AP.dir/src/SetEstados.cpp.o.provides.build: CMakeFiles/AP.dir/src/SetEstados.cpp.o
 
 
-CMakeFiles/AP.dir/src/Nodo.cpp.o: CMakeFiles/AP.dir/flags.make
-CMakeFiles/AP.dir/src/Nodo.cpp.o: ../src/Nodo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AP.dir/src/Nodo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/src/Nodo.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/src/Nodo.cpp
+CMakeFiles/AP.dir/src/Estado.cpp.o: CMakeFiles/AP.dir/flags.make
+CMakeFiles/AP.dir/src/Estado.cpp.o: ../src/Estado.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/izm20/Workspace/CC/Practica1/AP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AP.dir/src/Estado.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AP.dir/src/Estado.cpp.o -c /home/izm20/Workspace/CC/Practica1/AP/src/Estado.cpp
 
-CMakeFiles/AP.dir/src/Nodo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/src/Nodo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/src/Nodo.cpp > CMakeFiles/AP.dir/src/Nodo.cpp.i
+CMakeFiles/AP.dir/src/Estado.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AP.dir/src/Estado.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/izm20/Workspace/CC/Practica1/AP/src/Estado.cpp > CMakeFiles/AP.dir/src/Estado.cpp.i
 
-CMakeFiles/AP.dir/src/Nodo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/src/Nodo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/src/Nodo.cpp -o CMakeFiles/AP.dir/src/Nodo.cpp.s
+CMakeFiles/AP.dir/src/Estado.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AP.dir/src/Estado.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/izm20/Workspace/CC/Practica1/AP/src/Estado.cpp -o CMakeFiles/AP.dir/src/Estado.cpp.s
 
-CMakeFiles/AP.dir/src/Nodo.cpp.o.requires:
+CMakeFiles/AP.dir/src/Estado.cpp.o.requires:
 
-.PHONY : CMakeFiles/AP.dir/src/Nodo.cpp.o.requires
+.PHONY : CMakeFiles/AP.dir/src/Estado.cpp.o.requires
 
-CMakeFiles/AP.dir/src/Nodo.cpp.o.provides: CMakeFiles/AP.dir/src/Nodo.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Nodo.cpp.o.provides.build
-.PHONY : CMakeFiles/AP.dir/src/Nodo.cpp.o.provides
+CMakeFiles/AP.dir/src/Estado.cpp.o.provides: CMakeFiles/AP.dir/src/Estado.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AP.dir/build.make CMakeFiles/AP.dir/src/Estado.cpp.o.provides.build
+.PHONY : CMakeFiles/AP.dir/src/Estado.cpp.o.provides
 
-CMakeFiles/AP.dir/src/Nodo.cpp.o.provides.build: CMakeFiles/AP.dir/src/Nodo.cpp.o
+CMakeFiles/AP.dir/src/Estado.cpp.o.provides.build: CMakeFiles/AP.dir/src/Estado.cpp.o
 
 
 CMakeFiles/AP.dir/src/SetTransiciones.cpp.o: CMakeFiles/AP.dir/flags.make
@@ -205,8 +205,8 @@ CMakeFiles/AP.dir/src/Transicion.cpp.o.provides.build: CMakeFiles/AP.dir/src/Tra
 AP_OBJECTS = \
 "CMakeFiles/AP.dir/src/main.cpp.o" \
 "CMakeFiles/AP.dir/src/AP.cpp.o" \
-"CMakeFiles/AP.dir/src/SetNodos.cpp.o" \
-"CMakeFiles/AP.dir/src/Nodo.cpp.o" \
+"CMakeFiles/AP.dir/src/SetEstados.cpp.o" \
+"CMakeFiles/AP.dir/src/Estado.cpp.o" \
 "CMakeFiles/AP.dir/src/SetTransiciones.cpp.o" \
 "CMakeFiles/AP.dir/src/Transicion.cpp.o"
 
@@ -215,8 +215,8 @@ AP_EXTERNAL_OBJECTS =
 
 AP: CMakeFiles/AP.dir/src/main.cpp.o
 AP: CMakeFiles/AP.dir/src/AP.cpp.o
-AP: CMakeFiles/AP.dir/src/SetNodos.cpp.o
-AP: CMakeFiles/AP.dir/src/Nodo.cpp.o
+AP: CMakeFiles/AP.dir/src/SetEstados.cpp.o
+AP: CMakeFiles/AP.dir/src/Estado.cpp.o
 AP: CMakeFiles/AP.dir/src/SetTransiciones.cpp.o
 AP: CMakeFiles/AP.dir/src/Transicion.cpp.o
 AP: CMakeFiles/AP.dir/build.make
@@ -231,8 +231,8 @@ CMakeFiles/AP.dir/build: AP
 
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/main.cpp.o.requires
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/AP.cpp.o.requires
-CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/SetNodos.cpp.o.requires
-CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/Nodo.cpp.o.requires
+CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/SetEstados.cpp.o.requires
+CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/Estado.cpp.o.requires
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/SetTransiciones.cpp.o.requires
 CMakeFiles/AP.dir/requires: CMakeFiles/AP.dir/src/Transicion.cpp.o.requires
 

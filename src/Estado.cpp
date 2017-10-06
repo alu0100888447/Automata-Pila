@@ -5,7 +5,13 @@
 #include "../include/Estado.h"
 
 Estado::Estado() {
+    setId_(" ");
 
+}
+
+Estado::Estado(string id, SetTransiciones transiciones) {
+    setId_(id);
+    setTransiciones_(transiciones);
 }
 
 Estado::Estado(const Estado &cp) {
@@ -13,15 +19,11 @@ Estado::Estado(const Estado &cp) {
     transiciones_ = cp.getTransiciones_();
 }
 
-Estado::Estado(SetTransiciones transiciones, string id) {
-
-}
-
 Estado::~Estado() {
 
 }
 
-const string Estado::getId_() const {
+string Estado::getId_() const {
     return id_;
 }
 
@@ -48,6 +50,3 @@ bool Estado::operator==(const Estado &cp) const {
 ostream& operator<<(ostream &out, const Estado &cp) {
     return out;
 }
-
-
-

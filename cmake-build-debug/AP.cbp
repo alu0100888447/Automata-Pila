@@ -87,10 +87,10 @@
 		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/include/AP.h">
 			<Option target="AP"/>
 		</Unit>
-		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/include/Nodo.h">
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/include/Estado.h">
 			<Option target="AP"/>
 		</Unit>
-		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/include/SetNodos.h">
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/include/SetEstados.h">
 			<Option target="AP"/>
 		</Unit>
 		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/include/SetTransiciones.h">
@@ -102,10 +102,10 @@
 		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/AP.cpp">
 			<Option target="AP"/>
 		</Unit>
-		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/Nodo.cpp">
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/Estado.cpp">
 			<Option target="AP"/>
 		</Unit>
-		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/SetNodos.cpp">
+		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/SetEstados.cpp">
 			<Option target="AP"/>
 		</Unit>
 		<Unit filename="/home/izm20/Workspace/CC/Practica1/AP/src/SetTransiciones.cpp">

@@ -19,12 +19,14 @@ private:
 public:
     Estado();
     Estado(const Estado &cp);
-    Estado(SetTransiciones transiciones, string id);
+    Estado(string id, SetTransiciones transiciones);
     virtual ~Estado();
-    const string &getId_() const;
-    const SetTransiciones &getTransiciones_() const;
+
+    string getId_() const;
+    const SetTransiciones getTransiciones_() const;
     void setId_(const string &id_);
     void setTransiciones_(const SetTransiciones &transiciones_);
+
     Estado& operator=(const Estado &cp);
     bool operator==(const Estado &cp) const;
 
