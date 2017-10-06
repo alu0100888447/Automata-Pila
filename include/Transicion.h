@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include <string>
+#include <set>
+#include <cstdio>
 
 using namespace std;
 
@@ -21,9 +23,10 @@ public:
     Transicion(string estadoSiguiente, char entrada, char cabezaPila, string meterPila);
     Transicion(const Transicion &cp);
     virtual ~Transicion();
-    void operator=(const Transicion &cp);
+    Transicion& operator=(const Transicion &cp);
+    bool operator==(const Transicion &cp) const;
 
-    friend operator<<(ostream &out, const Transicion &cp);
+    friend ostream& operator<<(ostream &out, const Transicion &cp);
 };
 
 

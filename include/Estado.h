@@ -25,7 +25,8 @@ public:
     const SetTransiciones &getTransiciones_() const;
     void setId_(const string &id_);
     void setTransiciones_(const SetTransiciones &transiciones_);
-    void operator=(const Estado &cp);
+    Estado& operator=(const Estado &cp);
+    bool operator==(const Estado &cp) const;
 
     friend ostream& operator<<(ostream &out, const Estado &cp);
 };

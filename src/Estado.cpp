@@ -37,12 +37,16 @@ void Estado::setTransiciones_(const SetTransiciones &transiciones_) {
     Estado::transiciones_ = transiciones_;
 }
 
-void Estado::operator=(const Estado& cp) {
+Estado& Estado::operator=(const Estado& cp) {
 
 }
 
-ostream &operator<<(ostream &out, const Estado &cp) {
-    return <#initializer#>;
+bool Estado::operator==(const Estado &cp) const {
+    return false;
+}
+
+ostream& operator<<(ostream &out, const Estado &cp) {
+    return out;
 }
 
 

@@ -18,11 +18,15 @@ Transicion::~Transicion() {
 
 }
 
-void Transicion::operator=(const Transicion &cp) {
+Transicion& Transicion::operator=(const Transicion &cp) {
 
 }
 
-long operator<<(ostream &out, const Transicion &cp) {
-    return 0;
+bool Transicion::operator==(const Transicion &cp) const {
+    return false;
+}
+
+ostream& operator<<(ostream &out, const Transicion &cp) {
+    return out;
 }
 
