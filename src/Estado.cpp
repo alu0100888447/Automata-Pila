@@ -20,7 +20,8 @@ Estado::Estado(const Estado &cp) {
 }
 
 Estado::~Estado() {
-
+    id_.clear();
+    transiciones_.clearSetTransiciones();
 }
 
 string Estado::getId_() const {
@@ -40,11 +41,16 @@ void Estado::setTransiciones_(const SetTransiciones &transiciones_) {
 }
 
 Estado& Estado::operator=(const Estado& cp) {
-
+    setId_(cp.getId_());
+    setTransiciones_(cp.getTransiciones_());
+    return *this;
 }
 
 bool Estado::operator==(const Estado &cp) const {
-    return false;
+    bool aux = false;
+    if((getId_() == cp.getId_()) && (getTransiciones_() == cp.getTransiciones_()))
+        aux = true;
+    return aux;
 }
 
 ostream& operator<<(ostream &out, const Estado &cp) {

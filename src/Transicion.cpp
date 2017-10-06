@@ -32,6 +32,13 @@ Transicion::~Transicion() {
     meterPila_.clear();
 }
 
+void Transicion::clearTransicion() {
+    estadoSiguiente_.clear();
+    entrada_ = ' ';
+    cabezaPila_ = ' ';
+    meterPila_.clear();
+}
+
 const string &Transicion::getEstadoSiguiente_() const {
     return estadoSiguiente_;
 }
@@ -76,8 +83,8 @@ Transicion& Transicion::operator=(const Transicion &cp) {
 
 bool Transicion::operator==(const Transicion &cp) const {
     bool aux = false;
-    if(this->getEstadoSiguiente_() == cp.getEstadoSiguiente_() && this->getEntrada_() == cp.getEntrada_() &&
-        this->getCabezaPila_() == cp.getCabezaPila_() && this->getMeterPila_() == cp.getMeterPila_())
+    if((getEstadoSiguiente_() == cp.getEstadoSiguiente_()) && (getEntrada_() == cp.getEntrada_()) &&
+            (getCabezaPila_() == cp.getCabezaPila_()) && (getMeterPila_() == cp.getMeterPila_()))
         aux = true;
     return aux;
 }

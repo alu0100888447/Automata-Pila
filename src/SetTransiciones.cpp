@@ -18,6 +18,16 @@ SetTransiciones::SetTransiciones(const SetTransiciones &cp) {
     setNumeroTransiciones_(cp.getNumeroTransiciones_());
 }
 
+SetTransiciones::~SetTransiciones() {
+    conjuntoTransiciones_.clear();
+    numeroTransiciones_ = 0;
+}
+
+void SetTransiciones::clearSetTransiciones() {
+    conjuntoTransiciones_.clear();
+    numeroTransiciones_ = 0;
+}
+
 const set<Transicion> &SetTransiciones::getConjuntoTransiciones_() const {
     return conjuntoTransiciones_;
 }
@@ -40,4 +50,15 @@ SetTransiciones &SetTransiciones::operator=(const SetTransiciones &cp) {
         setNumeroTransiciones_(cp.getNumeroTransiciones_());
     }
     return *this;
+}
+
+bool SetTransiciones::operator==(const SetTransiciones &cp) const {
+    bool aux;
+    if((getConjuntoTransiciones_() == cp.getConjuntoTransiciones_()) && (getNumeroTransiciones_() == cp.getNumeroTransiciones_()))
+        aux = true;
+    return aux;
+}
+
+ostream &operator<<(ostream &out, const SetTransiciones &cp) {
+    return out;
 }

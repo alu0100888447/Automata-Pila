@@ -23,6 +23,7 @@ public:
     Transicion(string estadoSiguiente, char entrada, char cabezaPila, string meterPila);
     Transicion(const Transicion &cp);
     virtual ~Transicion();
+    void clearTransicion();
 
     const string &getEstadoSiguiente_() const;
     void setEstadoSiguiente_(const string &estadoSiguiente_);

@@ -15,11 +15,19 @@ public:
     SetTransiciones();
     SetTransiciones(set<Transicion> Transiciones, int numerTransiciones);
     SetTransiciones(const SetTransiciones &cp);
+    virtual ~SetTransiciones();
+    void clearSetTransiciones();
+
     const set<Transicion> &getConjuntoTransiciones_() const;
     void setConjuntoTransiciones_(const set<Transicion> &conjuntoTransiciones_);
     int getNumeroTransiciones_() const;
     void setNumeroTransiciones_(int numeroTransiciones_);
+
     SetTransiciones& operator=(const SetTransiciones &cp);
+    bool operator==(const SetTransiciones &cp) const;
+
+    friend ostream& operator<<(ostream &out, const SetTransiciones &cp);
+
 
 };
 

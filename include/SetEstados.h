@@ -8,7 +8,25 @@
 #include "Estado.h"
 
 class SetEstados {
+private:
+    set <Estado> conjuntoEstados_;
+    int numeroEstados_;
+public:
+    SetEstados();
+    SetEstados(set <Estado> conjuntoEstados, int numeroEstados);
+    SetEstados(const SetEstados &cp);
+    virtual ~SetEstados();
+    void clearSetEstados();
 
+    const set<Estado> &getConjuntoEstados_() const;
+    void setConjuntoEstados_(const set<Estado> &conjuntoEstados_);
+    int getNumeroEstados_() const;
+    void setNumeroEstados_(int numeroEstados_);
+
+    SetEstados& operator=(const SetEstados &cp);
+    bool operator==(const SetEstados &cp) const;
+
+    friend ostream& operator<<(ostream &out, const SetEstados &cp);
 };
 
 
