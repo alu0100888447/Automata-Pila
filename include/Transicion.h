@@ -9,6 +9,8 @@
 #include <string>
 #include <set>
 #include <cstdio>
+#include <stack>
+#include <fstream>
 
 using namespace std;
 

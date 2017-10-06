@@ -6,7 +6,6 @@
 
 Estado::Estado() {
     setId_(" ");
-
 }
 
 Estado::Estado(string id, SetTransiciones transiciones) {

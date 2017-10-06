@@ -7,11 +7,6 @@
 
 #include "SetTransiciones.h"
 
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 class Estado {
 private:
     string id_;
