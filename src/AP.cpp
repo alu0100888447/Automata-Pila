@@ -9,7 +9,26 @@ AP::AP() {
 }
 
 AP::AP(string nombreFichero) {
+    string aux = "", aux1 = "";
+    ifstream fichero(nombreFichero);
     cout << endl << nombreFichero << endl;
+    if(fichero.is_open()) {
+        while(!fichero.eof()) {
+            aux.clear();
+            aux1.clear();
+            fichero >> aux;
+            if(aux != "") {
+                if(aux == "#")
+                    getline(fichero, aux);
+                else {
+                    getline(fichero, aux1);
+                    aux += aux1;
+                    cout << aux << endl;
+
+                }
+            }
+        }
+    }
 }
 
 AP::AP(SetEstados conjuntoEstados, stack <char> pilaAutomata, string cadenaEntrada) {
