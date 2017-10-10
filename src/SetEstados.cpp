@@ -32,6 +32,17 @@ void SetEstados::pushEstado(const Estado &cp) {
     conjuntoEstados_.insert(cp);
 }
 
+void SetEstados::guardarInicio(string cadena) {
+    for(set <Estado>::iterator it = conjuntoEstados_.begin(); it != conjuntoEstados_.end(); ++it) {
+        Estado Aux = *it;
+        if(Aux.getId_() == cadena) {
+            conjuntoEstados_.erase((*it));
+            Aux.setInicio_(true);
+            conjuntoEstados_.insert(Aux);
+        }
+    }
+}
+
 const set<Estado> &SetEstados::getConjuntoEstados_() const {
     return conjuntoEstados_;
 }

@@ -7,24 +7,28 @@
 Estado::Estado() {
     setIdNumber_(-1);
     setId_(" ");
+    setInicio_(false);
 }
 
-Estado::Estado(int idNumber, string id, SetTransiciones transiciones) {
+Estado::Estado(int idNumber, string id, SetTransiciones transiciones, bool inicio) {
     setIdNumber_(idNumber);
     setId_(id);
     setTransiciones_(transiciones);
+    setInicio_(inicio);
 }
 
 Estado::Estado(const Estado &cp) {
     setIdNumber_(cp.getIdNumber_());
     setId_(cp.getId_());
     setTransiciones_(cp.getTransiciones_());
+    setInicio_(cp.isInicio_());
 }
 
 Estado::~Estado() {
     idNumber_ = -1;
     id_.clear();
     transiciones_.clearSetTransiciones();
+    inicio_ = false;
 }
 
 int Estado::getIdNumber_() const {
@@ -49,6 +53,14 @@ void Estado::setId_(const string &id_) {
 
 void Estado::setTransiciones_(const SetTransiciones &transiciones_) {
     Estado::transiciones_ = transiciones_;
+}
+
+bool Estado::isInicio_() const {
+    return inicio_;
+}
+
+void Estado::setInicio_(bool inicio_) {
+    Estado::inicio_ = inicio_;
 }
 
 Estado& Estado::operator=(const Estado& cp) {
@@ -78,6 +90,8 @@ bool Estado::operator<(const Estado &cp) const {
 
 ostream& operator<<(ostream &out, const Estado &cp) {
     out << "~~ " << cp.getIdNumber_() << " ~~ ->" << cp.getId_() << "<- ~~ ";
+    if(cp.isInicio_() == true)
+        out << " Es el inicio";
     //out << cp.getTransiciones_() << endl;
     return out;
 }
