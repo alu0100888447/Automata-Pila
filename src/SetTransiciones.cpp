@@ -53,10 +53,15 @@ SetTransiciones &SetTransiciones::operator=(const SetTransiciones &cp) {
 }
 
 bool SetTransiciones::operator==(const SetTransiciones &cp) const {
-    bool aux;
     if((getConjuntoTransiciones_() == cp.getConjuntoTransiciones_()) && (getNumeroTransiciones_() == cp.getNumeroTransiciones_()))
-        aux = true;
-    return aux;
+        return true;
+    return false;
+}
+
+bool SetTransiciones::operator!=(const SetTransiciones &cp) const {
+    if((getConjuntoTransiciones_() != cp.getConjuntoTransiciones_()) && (getNumeroTransiciones_() != cp.getNumeroTransiciones_()))
+        return true;
+    return false;
 }
 
 ostream &operator<<(ostream &out, const SetTransiciones &cp) {

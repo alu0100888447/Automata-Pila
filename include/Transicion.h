@@ -43,6 +43,7 @@ public:
 
     Transicion& operator=(const Transicion &cp);
     bool operator==(const Transicion &cp) const;
+    bool operator!=(const Transicion &cp) const;
     bool operator<(const Transicion &cp) const;
 
     friend ostream& operator<<(ostream &out, const Transicion &cp);

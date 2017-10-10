@@ -27,6 +27,7 @@ public:
 
     Estado& operator=(const Estado &cp);
     bool operator==(const Estado &cp) const;
+    bool operator!=(const Estado &cp) const;
     bool operator<(const Estado &cp) const;
 
     friend ostream& operator<<(ostream &out, const Estado &cp);

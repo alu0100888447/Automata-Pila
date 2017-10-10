@@ -25,6 +25,7 @@ public:
 
     SetTransiciones& operator=(const SetTransiciones &cp);
     bool operator==(const SetTransiciones &cp) const;
+    bool operator!=(const SetTransiciones &cp) const;
 
     friend ostream& operator<<(ostream &out, const SetTransiciones &cp);
 

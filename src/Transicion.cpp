@@ -95,19 +95,26 @@ Transicion& Transicion::operator=(const Transicion &cp) {
 }
 
 bool Transicion::operator==(const Transicion &cp) const {
-    bool aux = false;
-    if((getEstadoSiguiente_() == cp.getEstadoSiguiente_()) && (getEntrada_() == cp.getEntrada_()) &&
+    if((getIdNumber_() == cp.getIdNumber_()) && (getEstadoSiguiente_() == cp.getEstadoSiguiente_()) && (getEntrada_() == cp.getEntrada_()) &&
             (getCabezaPila_() == cp.getCabezaPila_()) && (getMeterPila_() == cp.getMeterPila_()))
-        aux = true;
-    return aux;
+        return true;
+    return false;
 }
 
-ostream& operator<<(ostream &out, const Transicion &cp) {
-    return out;
+
+bool Transicion::operator!=(const Transicion &cp) const {
+    if((getIdNumber_() != cp.getIdNumber_()) && (getEstadoSiguiente_() != cp.getEstadoSiguiente_()) && (getEntrada_() != cp.getEntrada_()) &&
+       (getCabezaPila_() != cp.getCabezaPila_()) && (getMeterPila_() != cp.getMeterPila_()))
+        return true;
+    return false;
 }
 
 bool Transicion::operator<(const Transicion &cp) const {
     if(getIdNumber_() < cp.getIdNumber_())
         return true;
     return false;
+}
+
+ostream& operator<<(ostream &out, const Transicion &cp) {
+    return out;
 }

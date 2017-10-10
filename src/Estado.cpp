@@ -52,16 +52,22 @@ void Estado::setTransiciones_(const SetTransiciones &transiciones_) {
 }
 
 Estado& Estado::operator=(const Estado& cp) {
+    setIdNumber_(cp.getIdNumber_());
     setId_(cp.getId_());
     setTransiciones_(cp.getTransiciones_());
     return *this;
 }
 
 bool Estado::operator==(const Estado &cp) const {
-    bool aux = false;
-    if((getId_() == cp.getId_()) && (getTransiciones_() == cp.getTransiciones_()))
-        aux = true;
-    return aux;
+    if((getIdNumber_() == cp.getIdNumber_()) && (getId_() == cp.getId_()) && (getTransiciones_() == cp.getTransiciones_()))
+        return true;
+    return false;
+}
+
+bool Estado::operator!=(const Estado &cp) const {
+    if((getIdNumber_() != cp.getIdNumber_()) && (getId_() != cp.getId_()) && (getTransiciones_() != cp.getTransiciones_()))
+        return true;
+    return false;
 }
 
 bool Estado::operator<(const Estado &cp) const {
