@@ -10,6 +10,8 @@
 class AP {
 private:
     SetEstados conjuntoEstados_;
+    set <char> alfabeto_;
+    set <char> alfabetoPila_;
     stack <char> pilaAutomata_;
     string cadenaEntrada_;
 public:
@@ -18,6 +20,7 @@ public:
     AP(SetEstados conjuntoEstados, stack <char> pilaAutomata, string cadenaEntrada);
     AP(const AP &cp);
     virtual ~AP();
+    vector <string> leerEstados(string cadena);
 
     const SetEstados &getConjuntoEstados_() const;
     void setConjuntoEstados_(const SetEstados &conjuntoEstados_);

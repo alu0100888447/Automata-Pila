@@ -8,6 +8,8 @@
 #include <iostream>
 #include <string>
 #include <set>
+#include <iterator>
+#include <vector>
 #include <cstdio>
 #include <stack>
 #include <fstream>

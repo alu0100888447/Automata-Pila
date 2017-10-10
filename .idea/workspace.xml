@@ -12,7 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44d3b4fb-0065-4c69-9653-e3957d780d6a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/AP.cpp.o" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/AP" afterPath="$PROJECT_DIR$/cmake-build-debug/AP" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/Estado.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/Estado.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/SetEstados.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/SetEstados.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/SetTransiciones.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/SetTransiciones.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/Transicion.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/Transicion.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/src/main.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APv.txt" afterPath="$PROJECT_DIR$/APv.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AP.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/AP.h" afterPath="$PROJECT_DIR$/include/AP.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Transicion.h" afterPath="$PROJECT_DIR$/include/Transicion.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AP.cpp" afterPath="$PROJECT_DIR$/src/AP.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -24,24 +35,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3482309">
+    <splitter split-orientation="horizontal" split-proportion="0.37181044">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="AP.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="AP.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/include/AP.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="198">
-                  <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+                  <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="APv.txt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/APv.txt">
+          <file leaf-file-name="SetEstados.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/SetEstados.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="378">
+                  <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -50,12 +61,32 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="AP.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/AP.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+                <state relative-caret-position="144">
+                  <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Estado.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/Estado.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SetTransiciones.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/SetTransiciones.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -81,10 +112,11 @@
         <option value="$PROJECT_DIR$/include/SetEstados.h" />
         <option value="$PROJECT_DIR$/src/SetEstados.cpp" />
         <option value="$PROJECT_DIR$/src/Estado.cpp" />
-        <option value="$PROJECT_DIR$/include/Estado.h" />
-        <option value="$PROJECT_DIR$/include/Transicion.h" />
-        <option value="$PROJECT_DIR$/include/AP.h" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/include/Transicion.h" />
+        <option value="$PROJECT_DIR$/APv.txt" />
+        <option value="$PROJECT_DIR$/include/AP.h" />
+        <option value="$PROJECT_DIR$/include/Estado.h" />
         <option value="$PROJECT_DIR$/src/AP.cpp" />
       </list>
     </option>
@@ -192,12 +224,14 @@
       <workItem from="1507279620245" duration="3883000" />
       <workItem from="1507286231581" duration="5140000" />
       <workItem from="1507300215566" duration="5736000" />
-      <workItem from="1507556838529" duration="1801000" />
+      <workItem from="1507556838529" duration="9044000" />
+      <workItem from="1507624332026" duration="1311000" />
+      <workItem from="1507626110159" duration="3865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23589000" />
+    <option name="totallyTimeSpent" value="36008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -209,16 +243,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1054" extended-state="6" />
+    <frame x="0" y="26" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14102565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.120726496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25225225" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24774775" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23986487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2117117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -272,11 +306,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/AP.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/AP.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APv.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AP.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -292,7 +357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -336,7 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -410,7 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -477,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,35 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Transicion.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/SetTransiciones.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Estado.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/SetEstados.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SetEstados.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -597,6 +629,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Transicion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APv.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SetEstados.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SetTransiciones.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Estado.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -604,23 +674,15 @@
     <entry file="file://$PROJECT_DIR$/include/AP.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APv.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="144">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>

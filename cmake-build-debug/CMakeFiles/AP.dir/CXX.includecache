@@ -29,6 +29,10 @@ string
 -
 set
 -
+iterator
+-
+vector
+-
 cstdio
 -
 stack

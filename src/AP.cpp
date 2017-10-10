@@ -9,23 +9,31 @@ AP::AP() {
 }
 
 AP::AP(string nombreFichero) {
-    string aux = "", aux1 = "";
+    string cadena = "";
+    int contador = 0;
+    vector <string> cadenas;
     ifstream fichero(nombreFichero);
-    cout << endl << nombreFichero << endl;
     if(fichero.is_open()) {
         while(!fichero.eof()) {
-            aux.clear();
+            cadena.clear();
             aux1.clear();
-            fichero >> aux;
-            if(aux != "") {
-                if(aux == "#")
-                    getline(fichero, aux);
-                else {
-                    getline(fichero, aux1);
-                    aux += aux1;
-                    cout << aux << endl;
-
+            getline(fichero, cadena);
+            if(cadena[0] == '#' || cadena == "") {
+                cadena.clear();
+            }
+            else {
+                cadenas = leerEstados(cadena);
+                if(contador == 0) {
+                    conjuntoEstados_.setNumeroEstados_(cadenas.size());
+                    set <Estado> setAuxiliar;
+                    for (int i = 0; i < conjuntoEstados_.getNumeroEstados_(); ++i) {
+                        Estado estadoAuxiliar;
+                        estadoAuxiliar.setId_(cadenas[i]);
+                        setAuxiliar.insert(estadoAuxiliar);
+                    }
+                    conjuntoEstados_.setConjuntoEstados_(setAuxiliar);
                 }
+                ++contador;
             }
         }
     }
@@ -46,6 +54,24 @@ AP::AP(const AP &cp) {
 AP::~AP() {
     conjuntoEstados_.clearSetEstados();
     cadenaEntrada_.clear();
+}
+
+vector <string> AP::leerEstados(string cadena) {
+    vector <string> cadenas;
+    string cadenaAux;
+    int i = 0;
+    while(i < cadena.size()) {
+        if (cadena[i] != ' ') {
+            cadenaAux.push_back(cadena[i]);
+        }
+        else {
+            cadenas.push_back(cadenaAux);
+            cadenaAux.clear();
+        }
+        ++i;
+    }
+    cadenas.push_back(cadenaAux);
+    return cadenas;
 }
 
 const SetEstados &AP::getConjuntoEstados_() const {
