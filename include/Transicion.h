@@ -18,17 +18,20 @@ using namespace std;
 
 class Transicion {
 private:
+    int idNumber_;
     string estadoSiguiente_;
     char entrada_;
     char cabezaPila_;
     string meterPila_;
 public:
     Transicion();
-    Transicion(string estadoSiguiente, char entrada, char cabezaPila, string meterPila);
+    Transicion(int idNumber, string estadoSiguiente, char entrada, char cabezaPila, string meterPila);
     Transicion(const Transicion &cp);
     virtual ~Transicion();
     void clearTransicion();
 
+    int getIdNumber_() const;
+    void setIdNumber_(int idNumber_);
     const string &getEstadoSiguiente_() const;
     void setEstadoSiguiente_(const string &estadoSiguiente_);
     char getEntrada_() const;
@@ -40,6 +43,7 @@ public:
 
     Transicion& operator=(const Transicion &cp);
     bool operator==(const Transicion &cp) const;
+    bool operator<(const Transicion &cp) const;
 
     friend ostream& operator<<(ostream &out, const Transicion &cp);
 };

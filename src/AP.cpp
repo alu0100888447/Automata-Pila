@@ -9,14 +9,14 @@ AP::AP() {
 }
 
 AP::AP(string nombreFichero) {
-    string cadena = "";
     int contador = 0;
+    string cadena = "";
     vector <string> cadenas;
     ifstream fichero(nombreFichero);
+
     if(fichero.is_open()) {
         while(!fichero.eof()) {
             cadena.clear();
-            aux1.clear();
             getline(fichero, cadena);
             if(cadena[0] == '#' || cadena == "") {
                 cadena.clear();
@@ -33,6 +33,7 @@ AP::AP(string nombreFichero) {
                     }
                     conjuntoEstados_.setConjuntoEstados_(setAuxiliar);
                 }
+                cadenas.clear();
                 ++contador;
             }
         }

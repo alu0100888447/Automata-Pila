@@ -5,13 +5,15 @@
 #include "../include/Transicion.h"
 
 Transicion::Transicion() {
+    setIdNumber_(-1);
     setEstadoSiguiente_("");
     setEntrada_(' ');
     setCabezaPila_(' ');
     setMeterPila_("");
 }
 
-Transicion::Transicion(string estadoSiguiente, char entrada, char cabezaPila, string meterPila) {
+Transicion::Transicion(int idNumber, string estadoSiguiente, char entrada, char cabezaPila, string meterPila) {
+    setIdNumber_(idNumber);
     setEstadoSiguiente_(estadoSiguiente);
     setEntrada_(entrada);
     setCabezaPila_(cabezaPila);
@@ -19,6 +21,7 @@ Transicion::Transicion(string estadoSiguiente, char entrada, char cabezaPila, st
 }
 
 Transicion::Transicion(const Transicion &cp) {
+    setIdNumber_(cp.getIdNumber_());
     setEstadoSiguiente_(cp.getEstadoSiguiente_());
     setEntrada_(cp.getEntrada_());
     setCabezaPila_(cp.getCabezaPila_());
@@ -26,6 +29,7 @@ Transicion::Transicion(const Transicion &cp) {
 }
 
 Transicion::~Transicion() {
+    idNumber_ = -1;
     estadoSiguiente_.clear();
     entrada_ = ' ';
     cabezaPila_ = ' ';
@@ -33,10 +37,19 @@ Transicion::~Transicion() {
 }
 
 void Transicion::clearTransicion() {
+    idNumber_ = -1;
     estadoSiguiente_.clear();
     entrada_ = ' ';
     cabezaPila_ = ' ';
     meterPila_.clear();
+}
+
+int Transicion::getIdNumber_() const {
+    return idNumber_;
+}
+
+void Transicion::setIdNumber_(int idNumber_) {
+    Transicion::idNumber_ = idNumber_;
 }
 
 const string &Transicion::getEstadoSiguiente_() const {
@@ -91,4 +104,10 @@ bool Transicion::operator==(const Transicion &cp) const {
 
 ostream& operator<<(ostream &out, const Transicion &cp) {
     return out;
+}
+
+bool Transicion::operator<(const Transicion &cp) const {
+    if(getIdNumber_() < cp.getIdNumber_())
+        return true;
+    return false;
 }

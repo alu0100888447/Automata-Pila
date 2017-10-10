@@ -5,22 +5,34 @@
 #include "../include/Estado.h"
 
 Estado::Estado() {
+    setIdNumber_(-1);
     setId_(" ");
 }
 
-Estado::Estado(string id, SetTransiciones transiciones) {
+Estado::Estado(int idNumber, string id, SetTransiciones transiciones) {
+    setIdNumber_(idNumber);
     setId_(id);
     setTransiciones_(transiciones);
 }
 
 Estado::Estado(const Estado &cp) {
+    setIdNumber_(cp.getIdNumber_());
     setId_(cp.getId_());
     setTransiciones_(cp.getTransiciones_());
 }
 
 Estado::~Estado() {
+    idNumber_ = -1;
     id_.clear();
     transiciones_.clearSetTransiciones();
+}
+
+int Estado::getIdNumber_() const {
+    return idNumber_;
+}
+
+void Estado::setIdNumber_(int idNumber_) {
+    Estado::idNumber_ = idNumber_;
 }
 
 string Estado::getId_() const {
@@ -50,6 +62,12 @@ bool Estado::operator==(const Estado &cp) const {
     if((getId_() == cp.getId_()) && (getTransiciones_() == cp.getTransiciones_()))
         aux = true;
     return aux;
+}
+
+bool Estado::operator<(const Estado &cp) const {
+    if(getIdNumber_() < cp.getIdNumber_())
+        return true;
+    return false;
 }
 
 ostream& operator<<(ostream &out, const Estado &cp) {

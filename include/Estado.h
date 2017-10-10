@@ -9,14 +9,17 @@
 
 class Estado {
 private:
+    int idNumber_;
     string id_;
     SetTransiciones transiciones_;
 public:
     Estado();
     Estado(const Estado &cp);
-    Estado(string id, SetTransiciones transiciones);
+    Estado(int idNumber, string id, SetTransiciones transiciones);
     virtual ~Estado();
 
+    int getIdNumber_() const;
+    void setIdNumber_(int idNumber_);
     string getId_() const;
     const SetTransiciones getTransiciones_() const;
     void setId_(const string &id_);
@@ -24,6 +27,7 @@ public:
 
     Estado& operator=(const Estado &cp);
     bool operator==(const Estado &cp) const;
+    bool operator<(const Estado &cp) const;
 
     friend ostream& operator<<(ostream &out, const Estado &cp);
 };
