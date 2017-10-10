@@ -24,7 +24,6 @@ AP::AP(string nombreFichero) {
                 cadenas = leerEstados(cadena);
                 if (contador == 0) {
                     conjuntoEstados_.setNumeroEstados_(cadenas.size());
-                    set<Estado> setAuxiliar;
                     for (int i = 0; i < conjuntoEstados_.getNumeroEstados_(); ++i) {
                         Estado estadoAuxiliar;
                         estadoAuxiliar.setIdNumber_(i + 1);
@@ -67,7 +66,7 @@ vector <string> AP::leerEstados(string cadena) {
         }
         else {
             if(cadenaAux != "")
-            cadenas.push_back(cadenaAux);
+                cadenas.push_back(cadenaAux);
             cadenaAux.clear();
         }
         ++i;

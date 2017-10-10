@@ -64,7 +64,7 @@ bool SetEstados::operator==(const SetEstados &cp) const {
 }
 
 ostream &operator<<(ostream &out, const SetEstados &cp) {
-    out << "***" << cp.getConjuntoEstados_().size() << "***" << endl;
+    out << "*** " << cp.getNumeroEstados_() << " ***" << endl;
     for(set<Estado>::iterator it = cp.getConjuntoEstados_().begin(); it != cp.getConjuntoEstados_().end(); ++it) {
         out << *it << endl;
     }

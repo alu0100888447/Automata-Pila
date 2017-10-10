@@ -77,7 +77,7 @@ bool Estado::operator<(const Estado &cp) const {
 }
 
 ostream& operator<<(ostream &out, const Estado &cp) {
-    out << cp.getIdNumber_() << " " << cp.getId_() << endl;
+    out << "~~ " << cp.getIdNumber_() << " ~~ ->" << cp.getId_() << "<- ~~ ";
     //out << cp.getTransiciones_() << endl;
     return out;
 }
