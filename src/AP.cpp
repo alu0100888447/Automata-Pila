@@ -15,29 +15,29 @@ AP::AP(string nombreFichero) {
     ifstream fichero(nombreFichero);
 
     if(fichero.is_open()) {
-        while(!fichero.eof()) {
+        while (!fichero.eof()) {
             cadena.clear();
             getline(fichero, cadena);
-            if(cadena[0] == '#' || cadena == "") {
+            if (cadena[0] == '#' || cadena == "") {
                 cadena.clear();
-            }
-            else {
+            } else {
                 cadenas = leerEstados(cadena);
-                if(contador == 0) {
+                if (contador == 0) {
                     conjuntoEstados_.setNumeroEstados_(cadenas.size());
-                    set <Estado> setAuxiliar;
+                    set<Estado> setAuxiliar;
                     for (int i = 0; i < conjuntoEstados_.getNumeroEstados_(); ++i) {
                         Estado estadoAuxiliar;
+                        estadoAuxiliar.setIdNumber_(i + 1);
                         estadoAuxiliar.setId_(cadenas[i]);
-                        setAuxiliar.insert(estadoAuxiliar);
+                        conjuntoEstados_.pushEstado(estadoAuxiliar);
                     }
-                    conjuntoEstados_.setConjuntoEstados_(setAuxiliar);
                 }
                 cadenas.clear();
                 ++contador;
             }
         }
     }
+    cout << conjuntoEstados_ << endl;
 }
 
 AP::AP(SetEstados conjuntoEstados, stack <char> pilaAutomata, string cadenaEntrada) {
@@ -66,6 +66,7 @@ vector <string> AP::leerEstados(string cadena) {
             cadenaAux.push_back(cadena[i]);
         }
         else {
+            if(cadenaAux != "")
             cadenas.push_back(cadenaAux);
             cadenaAux.clear();
         }

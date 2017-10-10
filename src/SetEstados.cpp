@@ -5,7 +5,7 @@
 #include "../include/SetEstados.h"
 
 SetEstados::SetEstados() {
-    setNumeroEstados_(0);
+    setNumeroEstados_(-1);
 }
 
 SetEstados::SetEstados(set<Estado> conjuntoEstados, int numeroEstados) {
@@ -28,12 +28,16 @@ void SetEstados::clearSetEstados() {
     numeroEstados_ = 0;
 }
 
+void SetEstados::pushEstado(const Estado &cp) {
+    conjuntoEstados_.insert(cp);
+}
+
 const set<Estado> &SetEstados::getConjuntoEstados_() const {
     return conjuntoEstados_;
 }
 
 void SetEstados::setConjuntoEstados_(const set<Estado> &conjuntoEstados_) {
-    SetEstados::conjuntoEstados_ = conjuntoEstados_;
+    this->conjuntoEstados_ = conjuntoEstados_;
 }
 
 int SetEstados::getNumeroEstados_() const {
@@ -41,7 +45,7 @@ int SetEstados::getNumeroEstados_() const {
 }
 
 void SetEstados::setNumeroEstados_(int numeroEstados_) {
-    SetEstados::numeroEstados_ = numeroEstados_;
+    this->numeroEstados_ = numeroEstados_;
 }
 
 SetEstados &SetEstados::operator=(const SetEstados &cp) {
@@ -60,5 +64,9 @@ bool SetEstados::operator==(const SetEstados &cp) const {
 }
 
 ostream &operator<<(ostream &out, const SetEstados &cp) {
+    out << "***" << cp.getConjuntoEstados_().size() << "***" << endl;
+    for(set<Estado>::iterator it = cp.getConjuntoEstados_().begin(); it != cp.getConjuntoEstados_().end(); ++it) {
+        out << *it << endl;
+    }
     return out;
 }

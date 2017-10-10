@@ -116,5 +116,6 @@ bool Transicion::operator<(const Transicion &cp) const {
 }
 
 ostream& operator<<(ostream &out, const Transicion &cp) {
+    out << "===" << cp.getIdNumber_() << "===" << cp.getEstadoSiguiente_() << "===" << cp.getEntrada_() << "===" << cp.getCabezaPila_() << "===" << cp.getMeterPila_();
     return out;
 }

@@ -17,6 +17,7 @@ public:
     SetEstados(const SetEstados &cp);
     virtual ~SetEstados();
     void clearSetEstados();
+    void pushEstado(const Estado &cp);
 
     const set<Estado> &getConjuntoEstados_() const;
     void setConjuntoEstados_(const set<Estado> &conjuntoEstados_);
