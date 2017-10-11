@@ -31,6 +31,10 @@ Estado::~Estado() {
     inicio_ = false;
 }
 
+void Estado::guardarTransicion(vector<string> cadenas) {
+    Transicion Aux();
+}
+
 int Estado::getIdNumber_() const {
     return idNumber_;
 }

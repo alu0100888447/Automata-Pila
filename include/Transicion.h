@@ -20,12 +20,12 @@ class Transicion {
 private:
     int idNumber_;
     string estadoSiguiente_;
-    char entrada_;
-    char cabezaPila_;
-    string meterPila_;
+    string entrada_;
+    string cabezaPila_;
+    vector <string> meterPila_;
 public:
     Transicion();
-    Transicion(int idNumber, string estadoSiguiente, char entrada, char cabezaPila, string meterPila);
+    Transicion(int idNumber, string estadoSiguiente, string entrada, string cabezaPila, vector <string> meterPila);
     Transicion(const Transicion &cp);
     virtual ~Transicion();
     void clearTransicion();
@@ -34,12 +34,12 @@ public:
     void setIdNumber_(int idNumber_);
     const string &getEstadoSiguiente_() const;
     void setEstadoSiguiente_(const string &estadoSiguiente_);
-    char getEntrada_() const;
-    void setEntrada_(char entrada_);
-    char getCabezaPila_() const;
-    void setCabezaPila_(char cabezaPila_);
-    const string &getMeterPila_() const;
-    void setMeterPila_(const string &meterPila_);
+    const string &getEntrada_() const;
+    void setEntrada_(const string &entrada_);
+    const string &getCabezaPila_() const;
+    void setCabezaPila_(const string &cabezaPila_);
+    const vector<string> &getMeterPila_() const;
+    void setMeterPila_(const vector<string> &meterPila_);
 
     Transicion& operator=(const Transicion &cp);
     bool operator==(const Transicion &cp) const;

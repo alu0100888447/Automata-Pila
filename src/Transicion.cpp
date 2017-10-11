@@ -7,12 +7,12 @@
 Transicion::Transicion() {
     setIdNumber_(-1);
     setEstadoSiguiente_("");
-    setEntrada_(' ');
-    setCabezaPila_(' ');
-    setMeterPila_("");
+    setEntrada_("");
+    setCabezaPila_("");
 }
 
-Transicion::Transicion(int idNumber, string estadoSiguiente, char entrada, char cabezaPila, string meterPila) {
+
+Transicion::Transicion(int idNumber, string estadoSiguiente, string entrada, string cabezaPila, vector <string> meterPila) {
     setIdNumber_(idNumber);
     setEstadoSiguiente_(estadoSiguiente);
     setEntrada_(entrada);
@@ -60,27 +60,27 @@ void Transicion::setEstadoSiguiente_(const string &estadoSiguiente_) {
     Transicion::estadoSiguiente_ = estadoSiguiente_;
 }
 
-char Transicion::getEntrada_() const {
+const string &Transicion::getEntrada_() const {
     return entrada_;
 }
 
-void Transicion::setEntrada_(char entrada_) {
+void Transicion::setEntrada_(const string &entrada_) {
     Transicion::entrada_ = entrada_;
 }
 
-char Transicion::getCabezaPila_() const {
+const string &Transicion::getCabezaPila_() const {
     return cabezaPila_;
 }
 
-void Transicion::setCabezaPila_(char cabezaPila_) {
+void Transicion::setCabezaPila_(const string &cabezaPila_) {
     Transicion::cabezaPila_ = cabezaPila_;
 }
 
-const string &Transicion::getMeterPila_() const {
+const vector<string> &Transicion::getMeterPila_() const {
     return meterPila_;
 }
 
-void Transicion::setMeterPila_(const string &meterPila_) {
+void Transicion::setMeterPila_(const vector<string> &meterPila_) {
     Transicion::meterPila_ = meterPila_;
 }
 
@@ -94,13 +94,13 @@ Transicion& Transicion::operator=(const Transicion &cp) {
     return *this;
 }
 
+
 bool Transicion::operator==(const Transicion &cp) const {
     if((getIdNumber_() == cp.getIdNumber_()) && (getEstadoSiguiente_() == cp.getEstadoSiguiente_()) && (getEntrada_() == cp.getEntrada_()) &&
             (getCabezaPila_() == cp.getCabezaPila_()) && (getMeterPila_() == cp.getMeterPila_()))
         return true;
     return false;
 }
-
 
 bool Transicion::operator!=(const Transicion &cp) const {
     if((getIdNumber_() != cp.getIdNumber_()) && (getEstadoSiguiente_() != cp.getEstadoSiguiente_()) && (getEntrada_() != cp.getEntrada_()) &&

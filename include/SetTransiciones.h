@@ -17,6 +17,7 @@ public:
     SetTransiciones(const SetTransiciones &cp);
     virtual ~SetTransiciones();
     void clearSetTransiciones();
+    void pushTransicion(const Transicion &cp);
 
     const set<Transicion> &getConjuntoTransiciones_() const;
     void setConjuntoTransiciones_(const set<Transicion> &conjuntoTransiciones_);

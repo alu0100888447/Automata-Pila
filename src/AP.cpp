@@ -39,7 +39,8 @@ AP::AP(string nombreFichero) {
                     case 4:
                         guardarCabezaPila(cadenas[0]);
                         break;
-                    default:;
+                    default:
+                        guardarTransicion(cadenas);
                 }
                 ++contador;
             }
@@ -120,6 +121,10 @@ void AP::guardarInicio(string cadena) {
 
 void AP::guardarCabezaPila(string cadena) {
     pilaAutomata_.push(cadena);
+}
+
+void AP::guardarTransicion(vector<string> cadenas) {
+    conjuntoEstados_.guardarTranscion(cadenas);
 }
 
 const SetEstados &AP::getConjuntoEstados_() const {

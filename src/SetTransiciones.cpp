@@ -28,6 +28,10 @@ void SetTransiciones::clearSetTransiciones() {
     numeroTransiciones_ = 0;
 }
 
+void SetTransiciones::pushTransicion(const Transicion &cp) {
+
+}
+
 const set<Transicion> &SetTransiciones::getConjuntoTransiciones_() const {
     return conjuntoTransiciones_;
 }

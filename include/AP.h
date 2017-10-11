@@ -27,6 +27,7 @@ public:
     void guardarAlfabetoPila(vector <string> cadenas);
     void guardarInicio(string cadena);
     void guardarCabezaPila(string cadena);
+    void guardarTransicion(vector <string> cadenas);
 
     const SetEstados &getConjuntoEstados_() const;
     void setConjuntoEstados_(const SetEstados &conjuntoEstados_);

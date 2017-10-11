@@ -43,6 +43,17 @@ void SetEstados::guardarInicio(string cadena) {
     }
 }
 
+void SetEstados::guardarTranscion(vector<string> cadenas) {
+    for (set<Estado>::iterator it = conjuntoEstados_.begin(); it != conjuntoEstados_.end(); ++it) {
+        Estado Aux = *it;
+        if (Aux.getId_() == cadenas[0]) {
+            conjuntoEstados_.erase(*it);
+            Aux.guardarTransicion(cadenas);
+
+        }
+    }
+}
+
 const set<Estado> &SetEstados::getConjuntoEstados_() const {
     return conjuntoEstados_;
 }
