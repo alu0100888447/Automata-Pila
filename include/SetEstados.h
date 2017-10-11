@@ -18,8 +18,7 @@ public:
     virtual ~SetEstados();
     void clearSetEstados();
     void pushEstado(const Estado &cp);
-    void guardarInicio(string cadena);
-    void guardarTranscion(vector <string> cadenas);
+    void guardarEstadoTransicion(vector<vector<string>> cadenas);
 
     const set<Estado> &getConjuntoEstados_() const;
     void setConjuntoEstados_(const set<Estado> &conjuntoEstados_);

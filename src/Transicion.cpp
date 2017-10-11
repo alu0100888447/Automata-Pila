@@ -96,15 +96,31 @@ Transicion& Transicion::operator=(const Transicion &cp) {
 
 
 bool Transicion::operator==(const Transicion &cp) const {
-    if((getIdNumber_() == cp.getIdNumber_()) && (getEstadoSiguiente_() == cp.getEstadoSiguiente_()) && (getEntrada_() == cp.getEntrada_()) &&
-            (getCabezaPila_() == cp.getCabezaPila_()) && (getMeterPila_() == cp.getMeterPila_()))
-        return true;
+    if(getMeterPila_().size() == cp.getMeterPila_().size()) {
+        for (int i = 0; i < getMeterPila_().size(); ++i) {
+            if (getMeterPila_()[i] != cp.getMeterPila_()[i])
+                return false;
+        }
+        if ((getIdNumber_() == cp.getIdNumber_()) && (getEstadoSiguiente_() == cp.getEstadoSiguiente_()) &&
+            (getEntrada_() == cp.getEntrada_()) && (getCabezaPila_() == cp.getCabezaPila_()))
+            return true;
+    }
     return false;
 }
 
 bool Transicion::operator!=(const Transicion &cp) const {
-    if((getIdNumber_() != cp.getIdNumber_()) && (getEstadoSiguiente_() != cp.getEstadoSiguiente_()) && (getEntrada_() != cp.getEntrada_()) &&
-       (getCabezaPila_() != cp.getCabezaPila_()) && (getMeterPila_() != cp.getMeterPila_()))
+    if ((getIdNumber_() == cp.getIdNumber_()) && (getEstadoSiguiente_() == cp.getEstadoSiguiente_()) &&
+        (getEntrada_() == cp.getEntrada_()) && (getCabezaPila_() == cp.getCabezaPila_())) {
+        if (getMeterPila_().size() == cp.getMeterPila_().size()) {
+            for (int i = 0; i < getMeterPila_().size(); ++i) {
+                if (getMeterPila_()[i] != cp.getMeterPila_()[i])
+                    return true;
+            }
+        }
+        else
+            return true;
+    }
+    else
         return true;
     return false;
 }
@@ -116,6 +132,10 @@ bool Transicion::operator<(const Transicion &cp) const {
 }
 
 ostream& operator<<(ostream &out, const Transicion &cp) {
-    out << "===" << cp.getIdNumber_() << "===" << cp.getEstadoSiguiente_() << "===" << cp.getEntrada_() << "===" << cp.getCabezaPila_() << "===" << cp.getMeterPila_();
+    out << "===" << cp.getIdNumber_() << "===" << cp.getEstadoSiguiente_() << "===" << cp.getEntrada_() << "===" << cp.getCabezaPila_() << "===";
+    for (int i = 0; i < cp.getMeterPila_().size(); ++i) {
+        out << cp.getMeterPila_()[i] << "===";
+    }
+    out << endl;
     return out;
 }

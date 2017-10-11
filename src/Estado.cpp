@@ -31,10 +31,6 @@ Estado::~Estado() {
     inicio_ = false;
 }
 
-void Estado::guardarTransicion(vector<string> cadenas) {
-    Transicion Aux();
-}
-
 int Estado::getIdNumber_() const {
     return idNumber_;
 }
@@ -96,6 +92,6 @@ ostream& operator<<(ostream &out, const Estado &cp) {
     out << "~~ " << cp.getIdNumber_() << " ~~ ->" << cp.getId_() << "<- ~~ ";
     if(cp.isInicio_() == true)
         out << " Es el inicio";
-    //out << cp.getTransiciones_() << endl;
+    out << cp.getTransiciones_() << endl;
     return out;
 }

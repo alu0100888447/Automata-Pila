@@ -29,7 +29,7 @@ void SetTransiciones::clearSetTransiciones() {
 }
 
 void SetTransiciones::pushTransicion(const Transicion &cp) {
-
+    conjuntoTransiciones_.insert(cp);
 }
 
 const set<Transicion> &SetTransiciones::getConjuntoTransiciones_() const {
@@ -69,7 +69,7 @@ bool SetTransiciones::operator!=(const SetTransiciones &cp) const {
 }
 
 ostream &operator<<(ostream &out, const SetTransiciones &cp) {
-    out << "&&&" << cp.getNumeroTransiciones_() << endl;
+    out << " &&& " << cp.getNumeroTransiciones_() << endl;
     for(set<Transicion>::iterator it = cp.getConjuntoTransiciones_().begin(); it != cp.getConjuntoTransiciones_().end(); ++it) {
         out << *it << endl;
     }

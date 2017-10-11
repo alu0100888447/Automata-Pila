@@ -18,7 +18,6 @@ public:
     Estado(const Estado &cp);
     Estado(int idNumber, string id, SetTransiciones transiciones, bool inicio);
     virtual ~Estado();
-    void guardarTransicion(vector <string> cadenas);
 
     int getIdNumber_() const;
     void setIdNumber_(int idNumber_);

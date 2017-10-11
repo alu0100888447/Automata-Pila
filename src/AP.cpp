@@ -9,9 +9,9 @@ AP::AP() {
 }
 
 AP::AP(string nombreFichero) {
-    int contador = 0;
     string cadena = "";
-    vector <string> cadenas;
+    vector <vector<string>> cadenas;
+    vector <vector<string>> cadenasAux;
     ifstream fichero(nombreFichero);
 
     if(fichero.is_open()) {
@@ -22,31 +22,19 @@ AP::AP(string nombreFichero) {
                 cadena.clear();
             }
             else {
-                cadenas = leerEstados(cadena);
-                switch(contador) {
-                    case 0:
-                        guardarEstados(cadenas);
-                        break;
-                    case 1:
-                        guardarAlfabeto(cadenas);
-                        break;
-                    case 2:
-                        guardarAlfabetoPila(cadenas);
-                        break;
-                    case 3:
-                        guardarInicio(cadenas[0]);
-                        break;
-                    case 4:
-                        guardarCabezaPila(cadenas[0]);
-                        break;
-                    default:
-                        guardarTransicion(cadenas);
-                }
-                ++contador;
+                cadenas.push_back(separarCadenas(cadena));
             }
-            cadenas.clear();
         }
     }
+    for (int i = 0; i < cadenas.size(); ++i) {
+        if(i != 1 && i != 2 && i != 4)
+        cadenasAux.push_back(cadenas[i]);
+    }
+    guardarEstados(cadenasAux);
+    guardarAlfabeto(cadenas[1]);
+    guardarAlfabetoPila(cadenas[2]);
+    guardarCabezaPila(cadenas[4][0]);
+
     cout << *this << endl;
 }
 
@@ -74,7 +62,7 @@ AP::~AP() {
     cadenaEntrada_.clear();
 }
 
-vector <string> AP::leerEstados(string cadena) {
+vector <string> AP::separarCadenas(string cadena) {
     vector <string> cadenas;
     string cadenaAux;
     int i = 0;
@@ -89,18 +77,14 @@ vector <string> AP::leerEstados(string cadena) {
         }
         ++i;
     }
+    if(cadenaAux != "")
     cadenas.push_back(cadenaAux);
     return cadenas;
 }
 
-void AP::guardarEstados(vector<string> cadenas) {
-    conjuntoEstados_.setNumeroEstados_(cadenas.size());
-    for (int i = 0; i < conjuntoEstados_.getNumeroEstados_(); ++i) {
-        Estado estadoAuxiliar;
-        estadoAuxiliar.setIdNumber_(i + 1);
-        estadoAuxiliar.setId_(cadenas[i]);
-        conjuntoEstados_.pushEstado(estadoAuxiliar);
-    }
+void AP::guardarEstados(vector <vector<string>> cadenas) {
+    conjuntoEstados_.setNumeroEstados_(cadenas[0].size());
+    conjuntoEstados_.guardarEstadoTransicion(cadenas);
 }
 
 void AP::guardarAlfabeto(vector<string> cadenas) {
@@ -115,16 +99,8 @@ void AP::guardarAlfabetoPila(vector<string> cadenas) {
     }
 }
 
-void AP::guardarInicio(string cadena) {
-    conjuntoEstados_.guardarInicio(cadena);
-}
-
 void AP::guardarCabezaPila(string cadena) {
     pilaAutomata_.push(cadena);
-}
-
-void AP::guardarTransicion(vector<string> cadenas) {
-    conjuntoEstados_.guardarTranscion(cadenas);
 }
 
 const SetEstados &AP::getConjuntoEstados_() const {

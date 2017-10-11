@@ -21,13 +21,11 @@ public:
        string cadenaEntrada);
     AP(const AP &cp);
     virtual ~AP();
-    vector <string> leerEstados(string cadena);
-    void guardarEstados(vector <string> cadenas);
+    vector <string> separarCadenas(string cadena);
+    void guardarEstados(vector <vector <string>> cadenas);
     void guardarAlfabeto(vector <string> cadenas);
     void guardarAlfabetoPila(vector <string> cadenas);
-    void guardarInicio(string cadena);
     void guardarCabezaPila(string cadena);
-    void guardarTransicion(vector <string> cadenas);
 
     const SetEstados &getConjuntoEstados_() const;
     void setConjuntoEstados_(const SetEstados &conjuntoEstados_);
