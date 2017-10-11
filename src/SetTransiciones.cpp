@@ -69,9 +69,9 @@ bool SetTransiciones::operator!=(const SetTransiciones &cp) const {
 }
 
 ostream &operator<<(ostream &out, const SetTransiciones &cp) {
-    out << " &&& " << cp.getNumeroTransiciones_() << endl;
+    out << "\t  Numero de transiciones: " << cp.getNumeroTransiciones_() << endl << endl;
     for(set<Transicion>::iterator it = cp.getConjuntoTransiciones_().begin(); it != cp.getConjuntoTransiciones_().end(); ++it) {
-        out << *it << endl;
+        out << *it;
     }
     return out;
 }

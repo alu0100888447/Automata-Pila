@@ -145,16 +145,15 @@ void AP::setCadenaEntrada_(const string &cadenaEntrada_) {
 
 ostream &operator<<(ostream &out, const AP &cp) {
     //out << "--- " << cp.getCadenaEntrada_() << " ---" << endl;
-    out << cp.getConjuntoEstados_() << endl;
+    out << cp.getConjuntoEstados_() << endl << "Alfabeto de la cadena: ";
     for(set <string>::iterator it = cp.getAlfabeto_().begin(); it != cp.getAlfabeto_().end(); ++it) {
         out << *it << " ";
     }
-    out << endl;
+    out << endl << "Alfabeto de la pila: ";
     for(set <string>::iterator it = cp.getAlfabetoPila_().begin(); it != cp.getAlfabetoPila_().end(); ++it) {
         out << *it << " ";
     }
-    out << endl;
-    out << "( " << cp.getPilaAutomata_().top() << " )" << endl;
+    out << endl << "Cabeza de la pila: " <<"(" << cp.getPilaAutomata_().top() << ")" << endl;
     return out;
 }
 

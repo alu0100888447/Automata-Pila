@@ -89,9 +89,10 @@ bool Estado::operator<(const Estado &cp) const {
 }
 
 ostream& operator<<(ostream &out, const Estado &cp) {
-    out << "~~ " << cp.getIdNumber_() << " ~~ ->" << cp.getId_() << "<- ~~ ";
-    if(cp.isInicio_() == true)
-        out << " Es el inicio";
-    out << cp.getTransiciones_() << endl;
+    out << "Nombre del estado: " << cp.getId_();
+    if(cp.isInicio_() == true) {
+        out << " <- Es el estado de arranque" << endl;
+    }
+    out << endl << cp.getTransiciones_() << endl;
     return out;
 }

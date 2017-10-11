@@ -132,10 +132,15 @@ bool Transicion::operator<(const Transicion &cp) const {
 }
 
 ostream& operator<<(ostream &out, const Transicion &cp) {
-    out << "===" << cp.getIdNumber_() << "===" << cp.getEstadoSiguiente_() << "===" << cp.getEntrada_() << "===" << cp.getCabezaPila_() << "===";
+    out << "\t\t| Estado siguiente: " << cp.getEstadoSiguiente_() << " | Caracter leido: " << cp.getEntrada_() <<
+        " | Caracter de la pila: " << cp.getCabezaPila_() << " |"<< endl << "\t\t| ";
+    if(cp.getMeterPila_().size() > 1)
+        out << "Caracteres que se meten en la pila: ";
+    else
+        out << "Caracter que se mete en la pila: ";
     for (int i = 0; i < cp.getMeterPila_().size(); ++i) {
-        out << cp.getMeterPila_()[i] << "===";
+        out << cp.getMeterPila_()[i] << " ";
     }
-    out << endl;
+    out << "|" << endl << endl;
     return out;
 }
