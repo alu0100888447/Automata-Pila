@@ -15,27 +15,30 @@ AP::AP(string nombreFichero) {
     ifstream fichero(nombreFichero);
 
     if(fichero.is_open()) {
-        while(!fichero.eof()) {
+        while (!fichero.eof()) {
             cadena.clear();
             getline(fichero, cadena);
-            if(cadena[0] == '#' || cadena == "") {
+            if (cadena[0] == '#' || cadena == "") {
                 cadena.clear();
-            }
-            else {
+            } else {
                 cadenas.push_back(separarCadenas(cadena));
             }
         }
+        for (int i = 0; i < cadenas.size(); ++i) {
+            if (i != 1 && i != 2 && i != 4)
+                cadenasAux.push_back(cadenas[i]);
+        }
+        guardarEstados(cadenasAux);
+        guardarAlfabeto(cadenas[1]);
+        guardarAlfabetoPila(cadenas[2]);
+        guardarCabezaPila(cadenas[4][0]);
+        cout << *this << endl;
+        fichero.close();
     }
-    for (int i = 0; i < cadenas.size(); ++i) {
-        if(i != 1 && i != 2 && i != 4)
-        cadenasAux.push_back(cadenas[i]);
+    else {
+        cout << endl << "~ El fichero no se pudo abrir o no existe." << endl;
     }
-    guardarEstados(cadenasAux);
-    guardarAlfabeto(cadenas[1]);
-    guardarAlfabetoPila(cadenas[2]);
-    guardarCabezaPila(cadenas[4][0]);
 
-    cout << *this << endl;
 }
 
 AP::AP(SetEstados conjuntoEstados, set<string> alfabeto, set<string> alfabetoPila, stack<string> pilaAutomata,

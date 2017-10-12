@@ -41,20 +41,9 @@ void SetEstados::guardarEstadoTransicion(vector<vector<string>> cadenas) {
         AuxEstado.setId_(cadenas[0][i]);
         if(cadenas[0][i] == cadenas[1][0])
             AuxEstado.setInicio_(true);
-
         for (int j = 2; j < cadenas.size(); ++j) {
             if(AuxEstado.getId_() == cadenas[j][0]) {
-                Transicion AuxTransicion;
-                vector <string> auxString;
-                AuxTransicion.setIdNumber_(j - 1);
-                AuxTransicion.setEntrada_(cadenas[j][1]);
-                AuxTransicion.setCabezaPila_(cadenas[j][2]);
-                AuxTransicion.setEstadoSiguiente_(cadenas[j][3]);
-                for (int k = 4; k < cadenas[j].size(); ++k) {
-                    auxString.push_back(cadenas[j][k]);
-                }
-                AuxTransicion.setMeterPila_(auxString);
-                AuxSetTransicion.pushTransicion(AuxTransicion);
+                AuxSetTransicion.pushTransicion(crearTransicion(j, cadenas));
                 ++contador;
             }
         }
@@ -62,6 +51,20 @@ void SetEstados::guardarEstadoTransicion(vector<vector<string>> cadenas) {
         AuxEstado.setTransiciones_(AuxSetTransicion);
         pushEstado(AuxEstado);
     }
+}
+
+Transicion SetEstados::crearTransicion(int indicie, vector<vector<string>> cadenas) {
+    Transicion AuxTransicion;
+    vector <string> auxString;
+    AuxTransicion.setIdNumber_(indicie - 1);
+    AuxTransicion.setEntrada_(cadenas[indicie][1]);
+    AuxTransicion.setCabezaPila_(cadenas[indicie][2]);
+    AuxTransicion.setEstadoSiguiente_(cadenas[indicie][3]);
+    for (int k = 4; k < cadenas[indicie].size(); ++k) {
+        auxString.push_back(cadenas[indicie][k]);
+    }
+    AuxTransicion.setMeterPila_(auxString);
+    return AuxTransicion;
 }
 
 const set<Estado> &SetEstados::getConjuntoEstados_() const {
