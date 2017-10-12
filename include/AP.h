@@ -16,11 +16,13 @@ private:
     string cadenaEntrada_;
 public:
     AP();
-    AP(string nombreFichero);
     AP(SetEstados conjuntoEstados, set <string> alfabeto, set <string> alfabetoPila, stack <string> pilaAutomata,
        string cadenaEntrada);
     AP(const AP &cp);
     virtual ~AP();
+    void leerFichero(string nombreFichero);
+    bool preAnalisis(string cadena);
+    void analisisCadena();
     vector <string> separarCadenas(string cadena);
     void guardarEstados(vector <vector <string>> cadenas);
     void guardarAlfabeto(vector <string> cadenas);

@@ -8,7 +8,31 @@ AP::AP() {
     setCadenaEntrada_("");
 }
 
-AP::AP(string nombreFichero) {
+AP::AP(SetEstados conjuntoEstados, set<string> alfabeto, set<string> alfabetoPila, stack<string> pilaAutomata,
+       string cadenaEntrada) {
+    setConjuntoEstados_(conjuntoEstados);
+    setAlfabeto_(alfabeto);
+    setAlfabetoPila_(alfabetoPila);
+    setPilaAutomata_(pilaAutomata);
+    setCadenaEntrada_(cadenaEntrada);
+}
+
+AP::AP(const AP &cp) {
+    setConjuntoEstados_(cp.getConjuntoEstados_());
+    setAlfabeto_(cp.getAlfabeto_());
+    setAlfabetoPila_(cp.getAlfabetoPila_());
+    setPilaAutomata_(cp.getPilaAutomata_());
+    setCadenaEntrada_(cp.getCadenaEntrada_());
+}
+
+AP::~AP() {
+    conjuntoEstados_.clearSetEstados();
+    alfabeto_.clear();
+    alfabetoPila_.clear();
+    cadenaEntrada_.clear();
+}
+
+void AP::leerFichero(string nombreFichero) {
     string cadena = "";
     vector <vector<string>> cadenas;
     vector <vector<string>> cadenasAux;
@@ -38,31 +62,28 @@ AP::AP(string nombreFichero) {
     else {
         cout << endl << "~ El fichero no se pudo abrir o no existe." << endl;
     }
-
 }
 
-AP::AP(SetEstados conjuntoEstados, set<string> alfabeto, set<string> alfabetoPila, stack<string> pilaAutomata,
-       string cadenaEntrada) {
-    setConjuntoEstados_(conjuntoEstados);
-    setAlfabeto_(alfabeto);
-    setAlfabetoPila_(alfabetoPila);
-    setPilaAutomata_(pilaAutomata);
-    setCadenaEntrada_(cadenaEntrada);
+bool AP::preAnalisis(string cadena) {
+    int contador = 0;
+    for (int i = 0; i < cadena.size(); ++i) {
+        for (set <string>::iterator it = alfabeto_.begin(); it != alfabeto_.end(); ++it) {
+            string auxCadena = *it;
+            if(cadena[i] == auxCadena[0])
+                ++contador;
+        }
+    }
+    if(contador == cadena.size()) {
+        setCadenaEntrada_(cadena);
+        return true;
+    }
+
+    else
+        return false;
 }
 
-AP::AP(const AP &cp) {
-    setConjuntoEstados_(cp.getConjuntoEstados_());
-    setAlfabeto_(cp.getAlfabeto_());
-    setAlfabetoPila_(cp.getAlfabetoPila_());
-    setPilaAutomata_(cp.getPilaAutomata_());
-    setCadenaEntrada_(cp.getCadenaEntrada_());
-}
+void AP::analisisCadena() {
 
-AP::~AP() {
-    conjuntoEstados_.clearSetEstados();
-    alfabeto_.clear();
-    alfabetoPila_.clear();
-    cadenaEntrada_.clear();
 }
 
 vector <string> AP::separarCadenas(string cadena) {
