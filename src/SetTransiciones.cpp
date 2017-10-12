@@ -23,6 +23,26 @@ SetTransiciones::~SetTransiciones() {
     numeroTransiciones_ = 0;
 }
 
+SetTransiciones SetTransiciones::analisisTransiciones(string caracter, string cabezaPila) {
+    SetTransiciones TransicionesPosibles;
+    int contador = 0;
+    for (set <Transicion>::iterator it = conjuntoTransiciones_.begin(); it != conjuntoTransiciones_.end(); ++it) {
+        Transicion AuxTransicion = *it;
+        if(AuxTransicion.getEntrada_() == caracter && AuxTransicion.getCabezaPila_() == cabezaPila) {
+            TransicionesPosibles.pushTransicion(AuxTransicion);
+            ++contador;
+        }
+    }
+    TransicionesPosibles.setNumeroTransiciones_(contador);
+    return TransicionesPosibles;
+}
+
+Transicion SetTransiciones::eleccionTransicion() {
+    for (set <Transicion>::iterator it = conjuntoTransiciones_.begin(); it != conjuntoTransiciones_.end(); ++it) {
+        return *it;
+    }
+}
+
 void SetTransiciones::clearSetTransiciones() {
     conjuntoTransiciones_.clear();
     numeroTransiciones_ = 0;

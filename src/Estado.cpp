@@ -31,6 +31,10 @@ Estado::~Estado() {
     inicio_ = false;
 }
 
+SetTransiciones Estado::analisisTransiciones(string caracter, string cabezaPila) {
+    return transiciones_.analisisTransiciones(caracter, cabezaPila);
+}
+
 int Estado::getIdNumber_() const {
     return idNumber_;
 }

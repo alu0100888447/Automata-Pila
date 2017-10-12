@@ -11,18 +11,25 @@ int main(int argc, char const *argv[]) {
         Automata.leerFichero(cadena);
     }
     int a = 0;
-    cadena.clear();
     do {
+        cadena.clear();
+        //cout << "\x1B[2J\x1B[H";
         cout << "0.- Salir" << endl;
         cout << "1.- Analizar Cadena" << endl;
         cout << "-> ";
         cin >> a;
         if(a == 1) {
-            cout << "\x1B[2J\x1B[H";
+            //cout << "\x1B[2J\x1B[H";
             cout << "* Introduzca la cadena a analizar: ";
             cin >> cadena;
-            if(Automata.preAnalisis(cadena))
-                Automata.analisisCadena();
+            if(Automata.preAnalisis(cadena)) {
+                if (Automata.inicioAnalisis()) {
+                    cout << "\n\t\t\033[1;32m| La cadena introducida es aceptada por el automata. |\033[0m\n" << endl;
+                }
+                else {
+                    cout << "\n\t\t\033[1;31m| La cadena introducida no es aceptada por el automata. |\033[0m\n" << endl;
+                }
+            }
             else
                 cout << "\n\t\t\033[1;31m[!La cadena introducida contiene caracteres no reconocibles por el automata.]\033[0m\n" << endl;
         }

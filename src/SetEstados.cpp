@@ -23,6 +23,24 @@ SetEstados::~SetEstados() {
     numeroEstados_ = 0;
 }
 
+SetTransiciones SetEstados::analisisTransiciones(string caracter, string cabezaPila, string id) {
+    SetTransiciones TransicionesPosibles;
+    for (set <Estado>::iterator it = conjuntoEstados_.begin(); it != conjuntoEstados_.end(); ++it) {
+        if((*it).getId_() == id) {
+            Estado AuxEstado = *it;
+            TransicionesPosibles = AuxEstado.analisisTransiciones(caracter, cabezaPila);
+        }
+    }
+    return TransicionesPosibles;
+}
+
+string SetEstados::devolverInicio() {
+    for (set <Estado>::iterator it = conjuntoEstados_.begin(); it != conjuntoEstados_.end(); ++it) {
+        if((*it).isInicio_() == true)
+            return (*it).getId_();
+    }
+}
+
 void SetEstados::clearSetEstados() {
     conjuntoEstados_.clear();
     numeroEstados_ = 0;

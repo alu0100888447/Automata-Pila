@@ -18,6 +18,7 @@ public:
     Estado(const Estado &cp);
     Estado(int idNumber, string id, SetTransiciones transiciones, bool inicio);
     virtual ~Estado();
+    SetTransiciones analisisTransiciones(string caracter, string cabezaPila);
 
     int getIdNumber_() const;
     void setIdNumber_(int idNumber_);

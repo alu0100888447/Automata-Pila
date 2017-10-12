@@ -2,6 +2,7 @@
 // Created by izm20 on 3/10/17.
 //
 
+#include <sstream>
 #include "../include/AP.h"
 
 AP::AP() {
@@ -82,7 +83,25 @@ bool AP::preAnalisis(string cadena) {
         return false;
 }
 
-void AP::analisisCadena() {
+bool AP::inicioAnalisis() {
+    SetTransiciones TransicionesPosibles;
+    string auxCaracter;
+    stringstream ss;
+    ss << cadenaEntrada_[0];
+    ss >> auxCaracter;
+    TransicionesPosibles = conjuntoEstados_.analisisTransiciones(auxCaracter, pilaAutomata_.top(), conjuntoEstados_.devolverInicio());
+    if (TransicionesPosibles.getNumeroTransiciones_() == 0)
+        return false;
+    else
+        eleccionCamino(TransicionesPosibles);
+    if(pilaAutomata_.size() == 0)
+        return true;
+    else
+        return false;
+}
+
+void AP::eleccionCamino(SetTransiciones TransicionesPosibles) {
+    Transicion TransicionElegida = TransicionesPosibles.eleccionTransicion();
 
 }
 

@@ -16,6 +16,8 @@ public:
     SetTransiciones(set<Transicion> Transiciones, int numerTransiciones);
     SetTransiciones(const SetTransiciones &cp);
     virtual ~SetTransiciones();
+    SetTransiciones analisisTransiciones(string caracter, string cabezaPila);
+    Transicion eleccionTransicion();
     void clearSetTransiciones();
     void pushTransicion(const Transicion &cp);
 

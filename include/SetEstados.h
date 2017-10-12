@@ -16,6 +16,8 @@ public:
     SetEstados(set <Estado> conjuntoEstados, int numeroEstados);
     SetEstados(const SetEstados &cp);
     virtual ~SetEstados();
+    SetTransiciones analisisTransiciones(string caracter, string cabezaPila, string id);
+    string devolverInicio();
     void clearSetEstados();
     void pushEstado(const Estado &cp);
     void guardarEstadoTransicion(vector<vector<string>> cadenas);
