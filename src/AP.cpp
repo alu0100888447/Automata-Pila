@@ -90,37 +90,53 @@ SetTransiciones AP::inicioAnalisis() {
     ss << cadenaEntrada_[0];
     ss >> auxCaracter;
     TransicionesPosibles = conjuntoEstados_.analisisTransiciones(auxCaracter, pilaAutomata_.top(), conjuntoEstados_.devolverInicio());
+    pilaAutomata_.pop();
     return TransicionesPosibles;
 }
 
 void AP::eleccionCamino(SetTransiciones TransicionesPosibles) {
-    SetTransiciones AuxTransicionesPosibles;
-    Transicion TransicionElegida = TransicionesPosibles.eleccionTransicion();
-    string auxCaracter;
-    stringstream ss;
-    pilaAutomata_.pop();
 
 }
 
 bool AP::recorrido() {
     SetTransiciones TransicionesPosibles = inicioAnalisis();
-    stack <Transicion> auxPila;
+    stack<Transicion> auxPila;
+    int indice = 0;
     for (int i = 0; i < TransicionesPosibles.getConjuntoTransiciones_().size(); ++i) {
         auxPila.push(TransicionesPosibles.getTransicion());
     }
-    for (int j = 0; j < auxPila.size(); ++j) {
-        cout << "Transicion elegida: " << endl << endl << auxPila.top();
-        auxPila.pop();
-    }
-    while (pilaAutomata_.size() != 0 || auxPila.size() != 0) {
-        string auxCaracter;
-        stringstream ss;
-        Transicion TransicionElegida = auxPila.top();
-        auxPila.pop();
-        if()
-        //TransicionesPosibles = conjuntoEstados_.analisisTransiciones()
-    }
-    return false;
+    do {
+        if (auxPila.size() != 0) {
+            cout << "Transicion elegida: " << endl << endl << auxPila.top();
+            string auxCaracter;
+            stringstream ss;
+            Transicion TransicionElegida = auxPila.top();
+            auxPila.pop();
+            if (TransicionElegida.getEntrada_() != ".") {
+                ++indice;
+            }
+            ss << cadenaEntrada_[indice];
+            ss >> auxCaracter;
+            if (TransicionElegida.getMeterPila_().size() != 1) {
+                for (int i = TransicionElegida.getMeterPila_().size() - 1; i <= 0; ++i) {
+                    pilaAutomata_.push(TransicionElegida.getMeterPila_()[i]);
+                }
+            } else {
+                if (TransicionElegida.getMeterPila_()[0] != ".") {
+                    pilaAutomata_.push(TransicionElegida.getMeterPila_()[0]);
+                }
+            }
+            TransicionesPosibles = conjuntoEstados_.analisisTransiciones(auxCaracter, pilaAutomata_.top(), TransicionElegida.getEstadoSiguiente_());
+            pilaAutomata_.pop();
+            for (int i = 0; i < TransicionesPosibles.getConjuntoTransiciones_().size(); ++i) {
+                auxPila.push(TransicionesPosibles.getTransicion());
+            }
+        }
+    } while (pilaAutomata_.size() != 0 || auxPila.size() != 0);
+    if (indice == cadenaEntrada_.size() && pilaAutomata_.size() == 0)
+        return true;
+    else
+        return false;
 }
 
 vector <string> AP::separarCadenas(string cadena) {
