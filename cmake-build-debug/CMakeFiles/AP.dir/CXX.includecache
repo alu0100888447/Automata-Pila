@@ -27,6 +27,8 @@ iostream
 -
 string
 -
+sstream
+-
 set
 -
 iterator
@@ -41,6 +43,8 @@ fstream
 -
 
 /home/izm20/Workspace/CC/Practica1/AP/src/AP.cpp
+sstream
+-
 ../include/AP.h
 /home/izm20/Workspace/CC/Practica1/AP/include/AP.h
 

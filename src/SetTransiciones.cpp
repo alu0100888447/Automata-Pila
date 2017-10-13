@@ -28,7 +28,7 @@ SetTransiciones SetTransiciones::analisisTransiciones(string caracter, string ca
     int contador = 0;
     for (set <Transicion>::iterator it = conjuntoTransiciones_.begin(); it != conjuntoTransiciones_.end(); ++it) {
         Transicion AuxTransicion = *it;
-        if(AuxTransicion.getEntrada_() == caracter && AuxTransicion.getCabezaPila_() == cabezaPila) {
+        if(((AuxTransicion.getEntrada_() == caracter) || AuxTransicion.getEntrada_() == ".") && AuxTransicion.getCabezaPila_() == cabezaPila) {
             TransicionesPosibles.pushTransicion(AuxTransicion);
             ++contador;
         }
@@ -50,6 +50,13 @@ void SetTransiciones::clearSetTransiciones() {
 
 void SetTransiciones::pushTransicion(const Transicion &cp) {
     conjuntoTransiciones_.insert(cp);
+}
+
+Transicion SetTransiciones::getTransicion() {
+    set <Transicion>::iterator it = conjuntoTransiciones_.begin();
+    Transicion Aux = *it;
+    conjuntoTransiciones_.erase((*it));
+    return Aux;
 }
 
 const set<Transicion> &SetTransiciones::getConjuntoTransiciones_() const {

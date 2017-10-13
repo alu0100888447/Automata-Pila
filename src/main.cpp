@@ -22,8 +22,9 @@ int main(int argc, char const *argv[]) {
             //cout << "\x1B[2J\x1B[H";
             cout << "* Introduzca la cadena a analizar: ";
             cin >> cadena;
+            cout << endl;
             if(Automata.preAnalisis(cadena)) {
-                if (Automata.inicioAnalisis()) {
+                if (Automata.recorrido()) {
                     cout << "\n\t\t\033[1;32m| La cadena introducida es aceptada por el automata. |\033[0m\n" << endl;
                 }
                 else {

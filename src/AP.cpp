@@ -35,11 +35,11 @@ AP::~AP() {
 
 void AP::leerFichero(string nombreFichero) {
     string cadena = "";
-    vector <vector<string>> cadenas;
-    vector <vector<string>> cadenasAux;
+    vector <vector <string>> cadenas;
+    vector <vector <string>> cadenasAux;
     ifstream fichero(nombreFichero);
 
-    if(fichero.is_open()) {
+    if (fichero.is_open()) {
         while (!fichero.eof()) {
             cadena.clear();
             getline(fichero, cadena);
@@ -70,11 +70,11 @@ bool AP::preAnalisis(string cadena) {
     for (int i = 0; i < cadena.size(); ++i) {
         for (set <string>::iterator it = alfabeto_.begin(); it != alfabeto_.end(); ++it) {
             string auxCadena = *it;
-            if(cadena[i] == auxCadena[0])
+            if (cadena[i] == auxCadena[0])
                 ++contador;
         }
     }
-    if(contador == cadena.size()) {
+    if (contador == cadena.size()) {
         setCadenaEntrada_(cadena);
         return true;
     }
@@ -83,26 +83,44 @@ bool AP::preAnalisis(string cadena) {
         return false;
 }
 
-bool AP::inicioAnalisis() {
+SetTransiciones AP::inicioAnalisis() {
     SetTransiciones TransicionesPosibles;
     string auxCaracter;
     stringstream ss;
     ss << cadenaEntrada_[0];
     ss >> auxCaracter;
     TransicionesPosibles = conjuntoEstados_.analisisTransiciones(auxCaracter, pilaAutomata_.top(), conjuntoEstados_.devolverInicio());
-    if (TransicionesPosibles.getNumeroTransiciones_() == 0)
-        return false;
-    else
-        eleccionCamino(TransicionesPosibles);
-    if(pilaAutomata_.size() == 0)
-        return true;
-    else
-        return false;
+    return TransicionesPosibles;
 }
 
 void AP::eleccionCamino(SetTransiciones TransicionesPosibles) {
+    SetTransiciones AuxTransicionesPosibles;
     Transicion TransicionElegida = TransicionesPosibles.eleccionTransicion();
+    string auxCaracter;
+    stringstream ss;
+    pilaAutomata_.pop();
 
+}
+
+bool AP::recorrido() {
+    SetTransiciones TransicionesPosibles = inicioAnalisis();
+    stack <Transicion> auxPila;
+    for (int i = 0; i < TransicionesPosibles.getConjuntoTransiciones_().size(); ++i) {
+        auxPila.push(TransicionesPosibles.getTransicion());
+    }
+    for (int j = 0; j < auxPila.size(); ++j) {
+        cout << "Transicion elegida: " << endl << endl << auxPila.top();
+        auxPila.pop();
+    }
+    while (pilaAutomata_.size() != 0 || auxPila.size() != 0) {
+        string auxCaracter;
+        stringstream ss;
+        Transicion TransicionElegida = auxPila.top();
+        auxPila.pop();
+        if()
+        //TransicionesPosibles = conjuntoEstados_.analisisTransiciones()
+    }
+    return false;
 }
 
 vector <string> AP::separarCadenas(string cadena) {
@@ -110,33 +128,33 @@ vector <string> AP::separarCadenas(string cadena) {
     string cadenaAux;
     int i = 0;
     while(i < cadena.size()) {
-        if(cadena[i] != ' ') {
+        if (cadena[i] != ' ') {
             cadenaAux.push_back(cadena[i]);
         }
         else {
-            if(cadenaAux != "")
+            if (cadenaAux != "")
                 cadenas.push_back(cadenaAux);
             cadenaAux.clear();
         }
         ++i;
     }
-    if(cadenaAux != "")
+    if (cadenaAux != "")
     cadenas.push_back(cadenaAux);
     return cadenas;
 }
 
-void AP::guardarEstados(vector <vector<string>> cadenas) {
+void AP::guardarEstados(vector <vector <string>> cadenas) {
     conjuntoEstados_.setNumeroEstados_(cadenas[0].size());
     conjuntoEstados_.guardarEstadoTransicion(cadenas);
 }
 
-void AP::guardarAlfabeto(vector<string> cadenas) {
+void AP::guardarAlfabeto(vector <string> cadenas) {
     for (int i = 0; i < cadenas.size(); ++i) {
         alfabeto_.insert(cadenas[i]);
     }
 }
 
-void AP::guardarAlfabetoPila(vector<string> cadenas) {
+void AP::guardarAlfabetoPila(vector <string> cadenas) {
     for (int i = 0; i < cadenas.size(); ++i) {
         alfabetoPila_.insert(cadenas[i]);
     }
@@ -189,11 +207,11 @@ void AP::setCadenaEntrada_(const string &cadenaEntrada_) {
 ostream &operator<<(ostream &out, const AP &cp) {
     //out << "--- " << cp.getCadenaEntrada_() << " ---" << endl;
     out << cp.getConjuntoEstados_() << endl << "Alfabeto de la cadena: ";
-    for(set <string>::iterator it = cp.getAlfabeto_().begin(); it != cp.getAlfabeto_().end(); ++it) {
+    for (set <string>::iterator it = cp.getAlfabeto_().begin(); it != cp.getAlfabeto_().end(); ++it) {
         out << *it << " ";
     }
     out << endl << "Alfabeto de la pila: ";
-    for(set <string>::iterator it = cp.getAlfabetoPila_().begin(); it != cp.getAlfabetoPila_().end(); ++it) {
+    for (set <string>::iterator it = cp.getAlfabetoPila_().begin(); it != cp.getAlfabetoPila_().end(); ++it) {
         out << *it << " ";
     }
     out << endl << "Cabeza de la pila: " <<"(" << cp.getPilaAutomata_().top() << ")" << endl;

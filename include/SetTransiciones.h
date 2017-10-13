@@ -20,6 +20,7 @@ public:
     Transicion eleccionTransicion();
     void clearSetTransiciones();
     void pushTransicion(const Transicion &cp);
+    Transicion getTransicion();
 
     const set<Transicion> &getConjuntoTransiciones_() const;
     void setConjuntoTransiciones_(const set<Transicion> &conjuntoTransiciones_);
