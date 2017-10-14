@@ -85,12 +85,10 @@ void Transicion::setMeterPila_(const vector<string> &meterPila_) {
 }
 
 Transicion& Transicion::operator=(const Transicion &cp) {
-    if(this != &cp) {
         setEstadoSiguiente_(cp.getEstadoSiguiente_());
         setEntrada_(cp.getEntrada_());
         setCabezaPila_(cp.getCabezaPila_());
         setMeterPila_(cp.getMeterPila_());
-    }
     return *this;
 }
 

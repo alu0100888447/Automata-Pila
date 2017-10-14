@@ -32,6 +32,10 @@ public:
     void guardarCabezaPila(string cadena);
     string getCaracter();
     SetEstados conjuntoEstados();
+    stack <string> getPilaAutomata();
+    void pop();
+    void push(string meter);
+    void setTransicion(string id, SetTransiciones Transiciones);
 
     const SetEstados getConjuntoEstados_() const;
     void setConjuntoEstados_(const SetEstados &conjuntoEstados_);

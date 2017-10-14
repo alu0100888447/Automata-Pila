@@ -22,6 +22,7 @@ public:
     void pushEstado(const Estado &cp);
     void guardarEstadoTransicion(vector<vector<string>> cadenas);
     Transicion crearTransicion(int indicie, vector<vector<string>> cadenas);
+    void setTransicion(string id, SetTransiciones Transiciones);
 
     const set<Estado> &getConjuntoEstados_() const;
     void setConjuntoEstados_(const set<Estado> &conjuntoEstados_);

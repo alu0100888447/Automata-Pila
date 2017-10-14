@@ -20,6 +20,7 @@ public:
     virtual ~Estado();
     SetTransiciones analisisTransiciones(string caracter, string cabezaPila);
 
+
     int getIdNumber_() const;
     void setIdNumber_(int idNumber_);
     string getId_() const;

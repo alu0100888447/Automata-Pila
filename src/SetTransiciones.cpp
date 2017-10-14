@@ -56,6 +56,7 @@ Transicion SetTransiciones::getTransicion() {
     set <Transicion>::iterator it = conjuntoTransiciones_.begin();
     Transicion Aux = *it;
     conjuntoTransiciones_.erase((*it));
+    --numeroTransiciones_;
     return Aux;
 }
 

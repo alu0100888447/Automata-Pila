@@ -90,6 +90,17 @@ const set<Estado> &SetEstados::getConjuntoEstados_() const {
     return conjuntoEstados_;
 }
 
+void SetEstados::setTransicion(string id, SetTransiciones Transiciones) {
+    for (set <Estado>::iterator it = conjuntoEstados_.begin(); it != conjuntoEstados_.end(); ++it) {
+        Estado Aux = *it;
+        if(Aux.getId_() == id) {
+            Aux.setTransiciones_(Transiciones);
+            conjuntoEstados_.erase((*it));
+            conjuntoEstados_.insert(Aux);
+        }
+    }
+}
+
 void SetEstados::setConjuntoEstados_(const set<Estado> &conjuntoEstados_) {
     SetEstados::conjuntoEstados_ = conjuntoEstados_;
 }

@@ -104,7 +104,7 @@ bool AP::recorrido() {
     Transicion AuxTransicion;
     string auxCaracter;
     string auxPila;
-    string nombreEstado;
+    string nombreEstado = conjuntoEstados().devolverInicio();
 
     do {
         if (AuxAP.getPilaAutomata_().size() == 0) {
@@ -122,7 +122,7 @@ bool AP::recorrido() {
             }
         }
         else {
-            TransicionesPosibles = AuxAP.conjuntoEstados().analisisTransiciones(AuxAP.getCaracter(), AuxAP.getPilaAutomata_().top(), nombreEstado);
+            TransicionesPosibles = AuxAP.conjuntoEstados().analisisTransiciones(AuxAP.getCaracter(), AuxAP.getPilaAutomata().top(), nombreEstado);
             switch (TransicionesPosibles.getNumeroTransiciones_()) {
                 case 0:
                     if (pilaRecorrido.size() != 0) {
@@ -133,11 +133,37 @@ bool AP::recorrido() {
                         return false;
                     }
                     break;
-                case 1: ;break;
-                default: ;
+                case 1:
+                    AuxTransicion = TransicionesPosibles.getTransicion();
+                    break;
+                default:
+                    AuxTransicion = TransicionesPosibles.getTransicion();
+                    AP AuxAuxAP = AuxAP;
+                    AuxAuxAP.setTransicion(AuxTransicion.getEstadoSiguiente_(), TransicionesPosibles);
+                    pilaRecorrido.push(AuxAuxAP);
+            }
+            if (AuxTransicion.getEstadoSiguiente_() != "") {
+                nombreEstado = AuxTransicion.getEstadoSiguiente_();
+                if (AuxTransicion.getEntrada_() != ".") {
+                    auxCaracter = AuxAP.getCadenaEntrada_();
+                    auxCaracter.erase(auxCaracter.begin());
+                    AuxAP.setCadenaEntrada_(auxCaracter);
+                }
+                AuxAP.pop();
+                if (AuxTransicion.getMeterPila_().size() == 1) {
+                    if (AuxTransicion.getMeterPila_()[0] != ".") {
+                        AuxAP.push(AuxTransicion.getMeterPila_()[0]);
+                    }
+                }
+                else {
+                    for (int i = AuxTransicion.getMeterPila_().size() - 1; i >= 0; --i) {
+                        AuxAP.push(AuxTransicion.getMeterPila_()[i]);
+                    }
+                }
             }
         }
-    } while (1 != 1);
+        AuxTransicion.clearTransicion();
+    } while (1 == 1);
 }
 
 vector <string> AP::separarCadenas(string cadena) {
@@ -191,6 +217,22 @@ string AP::getCaracter() {
 
 SetEstados AP::conjuntoEstados() {
     return conjuntoEstados_;
+}
+
+stack<string> AP::getPilaAutomata() {
+    return pilaAutomata_;
+}
+
+void AP::pop() {
+    pilaAutomata_.pop();
+}
+
+void AP::push(string meter) {
+    pilaAutomata_.push(meter);
+}
+
+void AP::setTransicion(string id, SetTransiciones Transiciones) {
+    conjuntoEstados_.setTransicion(id, Transiciones);
 }
 
 const SetEstados AP::getConjuntoEstados_() const {
