@@ -90,7 +90,6 @@ SetTransiciones AP::inicioAnalisis() {
     ss << cadenaEntrada_[0];
     ss >> auxCaracter;
     TransicionesPosibles = conjuntoEstados_.analisisTransiciones(auxCaracter, pilaAutomata_.top(), conjuntoEstados_.devolverInicio());
-    pilaAutomata_.pop();
     return TransicionesPosibles;
 }
 
@@ -99,44 +98,46 @@ void AP::eleccionCamino(SetTransiciones TransicionesPosibles) {
 }
 
 bool AP::recorrido() {
-    SetTransiciones TransicionesPosibles = inicioAnalisis();
-    stack<Transicion> auxPila;
-    int indice = 0;
-    for (int i = 0; i < TransicionesPosibles.getConjuntoTransiciones_().size(); ++i) {
-        auxPila.push(TransicionesPosibles.getTransicion());
-    }
+    stack <AP> pilaRecorrido;
+    AP AuxAP = (*this);
+    SetTransiciones TransicionesPosibles;// = inicioAnalisis();
+    Transicion AuxTransicion;
+    string auxCaracter;
+    string auxPila;
+    string nombreEstado;
+
     do {
-        if (auxPila.size() != 0) {
-            cout << "Transicion elegida: " << endl << endl << auxPila.top();
-            string auxCaracter;
-            stringstream ss;
-            Transicion TransicionElegida = auxPila.top();
-            auxPila.pop();
-            if (TransicionElegida.getEntrada_() != ".") {
-                ++indice;
+        if (AuxAP.getPilaAutomata_().size() == 0) {
+            if (AuxAP.getCadenaEntrada_().size() == 0) {
+                return true;
             }
-            ss << cadenaEntrada_[indice];
-            ss >> auxCaracter;
-            if (TransicionElegida.getMeterPila_().size() != 1) {
-                for (int i = TransicionElegida.getMeterPila_().size() - 1; i <= 0; ++i) {
-                    pilaAutomata_.push(TransicionElegida.getMeterPila_()[i]);
+            else {
+                if (pilaRecorrido.size() != 0) {
+                    AuxAP = pilaRecorrido.top();
+                    pilaRecorrido.pop();
                 }
-            } else {
-                if (TransicionElegida.getMeterPila_()[0] != ".") {
-                    pilaAutomata_.push(TransicionElegida.getMeterPila_()[0]);
+                else {
+                    return false;
                 }
-            }
-            TransicionesPosibles = conjuntoEstados_.analisisTransiciones(auxCaracter, pilaAutomata_.top(), TransicionElegida.getEstadoSiguiente_());
-            pilaAutomata_.pop();
-            for (int i = 0; i < TransicionesPosibles.getConjuntoTransiciones_().size(); ++i) {
-                auxPila.push(TransicionesPosibles.getTransicion());
             }
         }
-    } while (pilaAutomata_.size() != 0 || auxPila.size() != 0);
-    if (indice == cadenaEntrada_.size() && pilaAutomata_.size() == 0)
-        return true;
-    else
-        return false;
+        else {
+            TransicionesPosibles = AuxAP.conjuntoEstados().analisisTransiciones(AuxAP.getCaracter(), AuxAP.getPilaAutomata_().top(), nombreEstado);
+            switch (TransicionesPosibles.getNumeroTransiciones_()) {
+                case 0:
+                    if (pilaRecorrido.size() != 0) {
+                        AuxAP = pilaRecorrido.top();
+                        pilaRecorrido.pop();
+                    }
+                    else {
+                        return false;
+                    }
+                    break;
+                case 1: ;break;
+                default: ;
+            }
+        }
+    } while (1 != 1);
 }
 
 vector <string> AP::separarCadenas(string cadena) {
@@ -180,7 +181,19 @@ void AP::guardarCabezaPila(string cadena) {
     pilaAutomata_.push(cadena);
 }
 
-const SetEstados &AP::getConjuntoEstados_() const {
+string AP::getCaracter() {
+    stringstream ss;
+    string caracter;
+    ss << cadenaEntrada_[0];
+    ss >> caracter;
+    return caracter;
+}
+
+SetEstados AP::conjuntoEstados() {
+    return conjuntoEstados_;
+}
+
+const SetEstados AP::getConjuntoEstados_() const {
     return conjuntoEstados_;
 }
 
@@ -220,6 +233,15 @@ void AP::setCadenaEntrada_(const string &cadenaEntrada_) {
     AP::cadenaEntrada_ = cadenaEntrada_;
 }
 
+AP &AP::operator=(const AP &cp) {
+    conjuntoEstados_ = cp.getConjuntoEstados_();
+    alfabeto_ = cp.getAlfabeto_();
+    alfabetoPila_ = cp.getAlfabetoPila_();
+    pilaAutomata_ = cp.getPilaAutomata_();
+    cadenaEntrada_ = cp.getCadenaEntrada_();
+    return *this;
+}
+
 ostream &operator<<(ostream &out, const AP &cp) {
     //out << "--- " << cp.getCadenaEntrada_() << " ---" << endl;
     out << cp.getConjuntoEstados_() << endl << "Alfabeto de la cadena: ";
@@ -233,5 +255,6 @@ ostream &operator<<(ostream &out, const AP &cp) {
     out << endl << "Cabeza de la pila: " <<"(" << cp.getPilaAutomata_().top() << ")" << endl;
     return out;
 }
+
 
 

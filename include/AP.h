@@ -30,8 +30,10 @@ public:
     void guardarAlfabeto(vector <string> cadenas);
     void guardarAlfabetoPila(vector <string> cadenas);
     void guardarCabezaPila(string cadena);
+    string getCaracter();
+    SetEstados conjuntoEstados();
 
-    const SetEstados &getConjuntoEstados_() const;
+    const SetEstados getConjuntoEstados_() const;
     void setConjuntoEstados_(const SetEstados &conjuntoEstados_);
     const set<string> &getAlfabeto_() const;
     void setAlfabeto_(const set<string> &alfabeto_);
@@ -41,6 +43,8 @@ public:
     void setPilaAutomata_(const stack <string> &pilaAutomata_);
     const string &getCadenaEntrada_() const;
     void setCadenaEntrada_(const string &cadenaEntrada_);
+
+    AP& operator=(const AP &cp);
 
     friend ostream& operator<<(ostream &out, const AP &cp);
 
