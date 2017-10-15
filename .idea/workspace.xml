@@ -12,9 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44d3b4fb-0065-4c69-9653-e3957d780d6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Estado.h" afterPath="$PROJECT_DIR$/include/Estado.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/SetEstados.h" afterPath="$PROJECT_DIR$/include/SetEstados.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Estado.cpp" afterPath="$PROJECT_DIR$/src/Estado.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/SetTransiciones.h" afterPath="$PROJECT_DIR$/include/SetTransiciones.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +27,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="Estado.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/include/Estado.h">
+          <file leaf-file-name="SetTransiciones.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/SetTransiciones.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="373">
-                  <caret line="113" column="37" lean-forward="false" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
+                <state relative-caret-position="647">
+                  <caret line="107" column="72" lean-forward="false" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="72" />
                   <folding />
                 </state>
               </provider>
@@ -42,11 +41,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Estado.cpp" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Estado.cpp">
+          <file leaf-file-name="SetTransiciones.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/SetTransiciones.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="481">
-                  <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+                <state relative-caret-position="54">
+                  <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -97,7 +96,6 @@
         <option value="$PROJECT_DIR$/src/Traza.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/Transicion.cpp" />
-        <option value="$PROJECT_DIR$/include/SetTransiciones.h" />
         <option value="$PROJECT_DIR$/src/SetTransiciones.cpp" />
         <option value="$PROJECT_DIR$/APv.txt" />
         <option value="$PROJECT_DIR$/src/AP.cpp" />
@@ -106,6 +104,7 @@
         <option value="$PROJECT_DIR$/include/SetEstados.h" />
         <option value="$PROJECT_DIR$/include/Estado.h" />
         <option value="$PROJECT_DIR$/src/Estado.cpp" />
+        <option value="$PROJECT_DIR$/include/SetTransiciones.h" />
       </list>
     </option>
   </component>
@@ -227,12 +226,12 @@
       <workItem from="1507907919695" duration="3387000" />
       <workItem from="1507981809111" duration="3415000" />
       <workItem from="1508004000880" duration="18549000" />
-      <workItem from="1508063168258" duration="7308000" />
+      <workItem from="1508063168258" duration="7687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123173000" />
+    <option name="totallyTimeSpent" value="123552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -255,7 +254,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2533784" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46634614" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" x="655" y="372" width="957" height="429" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2072072" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2072072" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48986486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -620,26 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SetTransiciones.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Transicion.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1566">
           <caret line="87" column="8" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/SetTransiciones.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -688,7 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Estado.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="2034">
           <caret line="113" column="37" lean-forward="false" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
           <folding />
         </state>
@@ -696,8 +679,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Estado.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
+        <state relative-caret-position="495">
           <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetTransiciones.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SetTransiciones.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="107" column="72" lean-forward="false" selection-start-line="107" selection-start-column="72" selection-end-line="107" selection-end-column="72" />
           <folding />
         </state>
       </provider>
