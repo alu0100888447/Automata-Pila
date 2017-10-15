@@ -21,7 +21,7 @@ public:
      */
     SetEstados();
     /**
-     * @brief Constructor por defecto.
+     * @brief Constructor parametrizado.
      * @param conjuntoEstados
      * @param numeroEstados
      */

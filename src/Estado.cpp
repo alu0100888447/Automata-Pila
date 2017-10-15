@@ -94,9 +94,6 @@ bool Estado::operator<(const Estado &cp) const {
 
 ostream& operator<<(ostream &out, const Estado &cp) {
     out << "Estado actual: " << cp.getId_();
-    /*if(cp.isInicio_() == true) {
-        out << " <- Es el estado de arranque" << endl;
-    }*/
     out << endl << cp.getTransiciones_() << endl;
     return out;
 }
