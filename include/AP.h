@@ -22,8 +22,6 @@ public:
     virtual ~AP();
     void leerFichero(string nombreFichero);
     bool preAnalisis(string cadena);
-    SetTransiciones inicioAnalisis();
-    void eleccionCamino(SetTransiciones TransicionesPosibles);
     bool recorrido();
     vector <string> separarCadenas(string cadena);
     void guardarEstados(vector <vector <string>> cadenas);

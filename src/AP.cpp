@@ -83,20 +83,6 @@ bool AP::preAnalisis(string cadena) {
         return false;
 }
 
-SetTransiciones AP::inicioAnalisis() {
-    SetTransiciones TransicionesPosibles;
-    string auxCaracter;
-    stringstream ss;
-    ss << cadenaEntrada_[0];
-    ss >> auxCaracter;
-    TransicionesPosibles = conjuntoEstados_.analisisTransiciones(auxCaracter, pilaAutomata_.top(), conjuntoEstados_.devolverInicio());
-    return TransicionesPosibles;
-}
-
-void AP::eleccionCamino(SetTransiciones TransicionesPosibles) {
-
-}
-
 bool AP::recorrido() {
     stack <AP> pilaRecorrido;
     AP AuxAP = (*this);
