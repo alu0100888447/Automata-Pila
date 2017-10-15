@@ -86,10 +86,6 @@ Transicion SetEstados::crearTransicion(int indicie, vector<vector<string>> caden
     return AuxTransicion;
 }
 
-const set<Estado> &SetEstados::getConjuntoEstados_() const {
-    return conjuntoEstados_;
-}
-
 void SetEstados::setTransicion(string id, SetTransiciones Transiciones) {
     set <Estado> auxSetEstado;
     for (set <Estado>::iterator it = conjuntoEstados_.begin(); it != conjuntoEstados_.end(); ++it) {
@@ -100,6 +96,10 @@ void SetEstados::setTransicion(string id, SetTransiciones Transiciones) {
         auxSetEstado.insert(Aux);
     }
     conjuntoEstados_ = auxSetEstado;
+}
+
+const set<Estado> &SetEstados::getConjuntoEstados_() const {
+    return conjuntoEstados_;
 }
 
 void SetEstados::setConjuntoEstados_(const set<Estado> &conjuntoEstados_) {

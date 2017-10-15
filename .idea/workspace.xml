@@ -12,10 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44d3b4fb-0065-4c69-9653-e3957d780d6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/AP.h" afterPath="$PROJECT_DIR$/include/AP.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AP.cpp" afterPath="$PROJECT_DIR$/src/AP.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/SetEstados.h" afterPath="$PROJECT_DIR$/include/SetEstados.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SetEstados.cpp" afterPath="$PROJECT_DIR$/src/SetEstados.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,17 +24,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45259938">
+    <splitter split-orientation="horizontal" split-proportion="0.53899574">
       <split-first>
         <leaf>
-          <file leaf-file-name="AP.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SetEstados.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/include/SetEstados.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="477">
+                  <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AP.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/AP.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="365">
-                  <caret line="220" column="14" lean-forward="false" selection-start-line="220" selection-start-column="14" selection-end-line="220" selection-end-column="14" />
+                <state relative-caret-position="1888">
+                  <caret line="135" column="43" lean-forward="false" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="43" />
                   <folding>
                     <element signature="e#39#57#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AP.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/AP.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -45,11 +63,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="AP.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/include/AP.h">
+          <file leaf-file-name="SetEstados.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/SetEstados.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="93" column="16" lean-forward="false" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+                <state relative-caret-position="484">
+                  <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -72,6 +90,9 @@
       <find>cout</find>
       <find>conjuntoEstados()</find>
       <find>.pop()</find>
+      <find>push(</find>
+      <find>crear</find>
+      <find>setTransicion(</find>
     </findStrings>
     <replaceStrings>
       <replace>if(</replace>
@@ -98,14 +119,14 @@
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/Estado.cpp" />
         <option value="$PROJECT_DIR$/include/Estado.h" />
-        <option value="$PROJECT_DIR$/include/SetEstados.h" />
         <option value="$PROJECT_DIR$/src/Transicion.cpp" />
-        <option value="$PROJECT_DIR$/src/SetEstados.cpp" />
         <option value="$PROJECT_DIR$/include/SetTransiciones.h" />
         <option value="$PROJECT_DIR$/src/SetTransiciones.cpp" />
         <option value="$PROJECT_DIR$/APv.txt" />
-        <option value="$PROJECT_DIR$/include/AP.h" />
         <option value="$PROJECT_DIR$/src/AP.cpp" />
+        <option value="$PROJECT_DIR$/include/AP.h" />
+        <option value="$PROJECT_DIR$/src/SetEstados.cpp" />
+        <option value="$PROJECT_DIR$/include/SetEstados.h" />
       </list>
     </option>
   </component>
@@ -227,12 +248,12 @@
       <workItem from="1507907919695" duration="3387000" />
       <workItem from="1507981809111" duration="3415000" />
       <workItem from="1508004000880" duration="18549000" />
-      <workItem from="1508063168258" duration="2396000" />
+      <workItem from="1508063168258" duration="6835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118261000" />
+    <option name="totallyTimeSpent" value="122700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -247,15 +268,15 @@
     <frame x="1280" y="26" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12660256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12660256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21621622" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21621622" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2533784" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46634614" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" x="655" y="372" width="957" height="429" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2072072" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2072072" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48986486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -323,53 +344,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>26</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>27</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>28</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>29</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>30</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>32</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>31</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>33</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/SetEstados.cpp</url>
-          <line>34</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="171" />
     </breakpoint-manager>
     <watches-manager />
@@ -667,18 +641,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SetEstados.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SetTransiciones.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,6 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -700,13 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/SetEstados.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -715,6 +676,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -728,19 +690,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/AP.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="93" column="16" lean-forward="false" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        <state relative-caret-position="198">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetEstados.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="97" column="36" lean-forward="true" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="220" column="14" lean-forward="false" selection-start-line="220" selection-start-column="14" selection-end-line="220" selection-end-column="14" />
+        <state relative-caret-position="1888">
+          <caret line="135" column="43" lean-forward="false" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="43" />
           <folding>
             <element signature="e#39#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/SetEstados.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
