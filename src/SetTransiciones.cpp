@@ -37,10 +37,8 @@ SetTransiciones SetTransiciones::analisisTransiciones(string caracter, string ca
     return TransicionesPosibles;
 }
 
-Transicion SetTransiciones::eleccionTransicion() {
-    for (set <Transicion>::iterator it = conjuntoTransiciones_.begin(); it != conjuntoTransiciones_.end(); ++it) {
-        return *it;
-    }
+void SetTransiciones::eliminarTransicion(Transicion cp) {
+    conjuntoTransiciones_.erase(cp);
 }
 
 void SetTransiciones::clearSetTransiciones() {
@@ -55,8 +53,6 @@ void SetTransiciones::pushTransicion(const Transicion &cp) {
 Transicion SetTransiciones::getTransicion() {
     set <Transicion>::iterator it = conjuntoTransiciones_.begin();
     Transicion Aux = *it;
-    conjuntoTransiciones_.erase((*it));
-    --numeroTransiciones_;
     return Aux;
 }
 

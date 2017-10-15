@@ -85,6 +85,7 @@ void Transicion::setMeterPila_(const vector<string> &meterPila_) {
 }
 
 Transicion& Transicion::operator=(const Transicion &cp) {
+        setIdNumber_(cp.getIdNumber_());
         setEstadoSiguiente_(cp.getEstadoSiguiente_());
         setEntrada_(cp.getEntrada_());
         setCabezaPila_(cp.getCabezaPila_());

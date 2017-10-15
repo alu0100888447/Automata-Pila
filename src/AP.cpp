@@ -105,6 +105,7 @@ bool AP::recorrido() {
     string auxCaracter;
     string auxPila;
     string nombreEstado = conjuntoEstados().devolverInicio();
+    bool repeat = false;
 
     do {
         if (AuxAP.getPilaAutomata_().size() == 0) {
@@ -115,6 +116,7 @@ bool AP::recorrido() {
                 if (pilaRecorrido.size() != 0) {
                     AuxAP = pilaRecorrido.top();
                     pilaRecorrido.pop();
+                    repeat = true;
                 }
                 else {
                     return false;
@@ -123,11 +125,16 @@ bool AP::recorrido() {
         }
         else {
             TransicionesPosibles = AuxAP.conjuntoEstados().analisisTransiciones(AuxAP.getCaracter(), AuxAP.getPilaAutomata().top(), nombreEstado);
+            if (repeat == true) {
+                AuxAP.setConjuntoEstados_(conjuntoEstados_);
+                repeat = false;
+            }
             switch (TransicionesPosibles.getNumeroTransiciones_()) {
                 case 0:
                     if (pilaRecorrido.size() != 0) {
                         AuxAP = pilaRecorrido.top();
                         pilaRecorrido.pop();
+                        repeat = true;
                     }
                     else {
                         return false;
@@ -138,11 +145,13 @@ bool AP::recorrido() {
                     break;
                 default:
                     AuxTransicion = TransicionesPosibles.getTransicion();
+                    TransicionesPosibles.eliminarTransicion(AuxTransicion);
                     AP AuxAuxAP = AuxAP;
                     AuxAuxAP.setTransicion(AuxTransicion.getEstadoSiguiente_(), TransicionesPosibles);
                     pilaRecorrido.push(AuxAuxAP);
             }
             if (AuxTransicion.getEstadoSiguiente_() != "") {
+                cout << endl << "Transicion elegida: " << endl << endl << AuxTransicion;
                 nombreEstado = AuxTransicion.getEstadoSiguiente_();
                 if (AuxTransicion.getEntrada_() != ".") {
                     auxCaracter = AuxAP.getCadenaEntrada_();
