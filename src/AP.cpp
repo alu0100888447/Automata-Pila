@@ -103,6 +103,7 @@ bool AP::analisis() {
                     AuxAP = pilaRecorrido.top();
                     pilaRecorrido.pop();
                     repeat = true;
+                    cout << "\n\t\t\033[1;31m[!Camino sin salida.]\033[0m\n" << endl;
                 }
                 else {
                     return false;
@@ -115,12 +116,15 @@ bool AP::analisis() {
                 AuxAP.setConjuntoEstados_(getConjuntoEstados());
                 repeat = false;
             }
+            cout << "Estado actual: " << nombreEstado << endl;
+            cout << "\tTransiciones posibles ->" << TransicionesPosibles;
             switch (TransicionesPosibles.getNumeroTransiciones_()) {
                 case 0:
                     if (pilaRecorrido.size() != 0) {
                         AuxAP = pilaRecorrido.top();
                         pilaRecorrido.pop();
                         repeat = true;
+                        cout << "\n\t\t\033[1;31m[!Camino sin salida.]\033[0m\n" << endl;
                     }
                     else {
                         return false;
@@ -137,7 +141,7 @@ bool AP::analisis() {
                     pilaRecorrido.push(AuxAuxAP);
             }
             if (AuxTransicion.getEstadoSiguiente_() != "") {
-                cout << endl << "Transicion elegida: " << endl << endl << AuxTransicion;
+                cout << endl << "Transicion elegida: " << endl << endl << "\033[1;32m" << AuxTransicion << "\033[0m";
                 nombreEstado = AuxTransicion.getEstadoSiguiente_();
                 if (AuxTransicion.getEntrada_() != ".") {
                     auxCaracter = AuxAP.getCadenaEntrada_();

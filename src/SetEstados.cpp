@@ -28,7 +28,6 @@ SetTransiciones SetEstados::analisisTransiciones(string caracter, string cabezaP
     for (set <Estado>::iterator it = conjuntoEstados_.begin(); it != conjuntoEstados_.end(); ++it) {
         if((*it).getId_() == id) {
             Estado AuxEstado = *it;
-            cout << AuxEstado;
             TransicionesPosibles = AuxEstado.analisisTransiciones(caracter, cabezaPila);
         }
     }
