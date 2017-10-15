@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
             cin >> cadena;
             cout << endl;
             if(Automata.preAnalisis(cadena)) {
-                if (Automata.recorrido()) {
+                if (Automata.analisis()) {
                     cout << "\n\t\t\033[1;32m| La cadena introducida es aceptada por el automata. |\033[0m\n" << endl;
                 }
                 else {

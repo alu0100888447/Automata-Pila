@@ -83,14 +83,14 @@ bool AP::preAnalisis(string cadena) {
         return false;
 }
 
-bool AP::recorrido() {
+bool AP::analisis() {
     stack <AP> pilaRecorrido;
     AP AuxAP = (*this);
-    SetTransiciones TransicionesPosibles;// = inicioAnalisis();
+    SetTransiciones TransicionesPosibles;
     Transicion AuxTransicion;
     string auxCaracter;
     string auxPila;
-    string nombreEstado = conjuntoEstados().devolverInicio();
+    string nombreEstado = getConjuntoEstados().devolverInicio();
     bool repeat = false;
 
     do {
@@ -110,9 +110,9 @@ bool AP::recorrido() {
             }
         }
         else {
-            TransicionesPosibles = AuxAP.conjuntoEstados().analisisTransiciones(AuxAP.getCaracter(), AuxAP.getPilaAutomata().top(), nombreEstado);
+            TransicionesPosibles = AuxAP.getConjuntoEstados().analisisTransiciones(AuxAP.getCaracter(), AuxAP.getPilaAutomata().top(), nombreEstado);
             if (repeat == true) {
-                AuxAP.setConjuntoEstados_(conjuntoEstados_);
+                AuxAP.setConjuntoEstados_(getConjuntoEstados());
                 repeat = false;
             }
             switch (TransicionesPosibles.getNumeroTransiciones_()) {
@@ -144,15 +144,15 @@ bool AP::recorrido() {
                     auxCaracter.erase(auxCaracter.begin());
                     AuxAP.setCadenaEntrada_(auxCaracter);
                 }
-                AuxAP.pop();
+                AuxAP.getPilaAutomata().pop();
                 if (AuxTransicion.getMeterPila_().size() == 1) {
                     if (AuxTransicion.getMeterPila_()[0] != ".") {
-                        AuxAP.push(AuxTransicion.getMeterPila_()[0]);
+                        AuxAP.getPilaAutomata().push(AuxTransicion.getMeterPila_()[0]);
                     }
                 }
                 else {
                     for (int i = AuxTransicion.getMeterPila_().size() - 1; i >= 0; --i) {
-                        AuxAP.push(AuxTransicion.getMeterPila_()[i]);
+                        AuxAP.getPilaAutomata().push(AuxTransicion.getMeterPila_()[i]);
                     }
                 }
             }
@@ -202,6 +202,10 @@ void AP::guardarCabezaPila(string cadena) {
     pilaAutomata_.push(cadena);
 }
 
+void AP::setTransicion(string id, SetTransiciones Transiciones) {
+    conjuntoEstados_.setTransicion(id, Transiciones);
+}
+
 string AP::getCaracter() {
     stringstream ss;
     string caracter;
@@ -210,24 +214,12 @@ string AP::getCaracter() {
     return caracter;
 }
 
-SetEstados AP::conjuntoEstados() {
+SetEstados& AP::getConjuntoEstados() {
     return conjuntoEstados_;
 }
 
-stack<string> AP::getPilaAutomata() {
+stack<string>& AP::getPilaAutomata() {
     return pilaAutomata_;
-}
-
-void AP::pop() {
-    pilaAutomata_.pop();
-}
-
-void AP::push(string meter) {
-    pilaAutomata_.push(meter);
-}
-
-void AP::setTransicion(string id, SetTransiciones Transiciones) {
-    conjuntoEstados_.setTransicion(id, Transiciones);
 }
 
 const SetEstados AP::getConjuntoEstados_() const {
