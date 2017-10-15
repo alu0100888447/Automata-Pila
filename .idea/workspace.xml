@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44d3b4fb-0065-4c69-9653-e3957d780d6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/AP.h" afterPath="$PROJECT_DIR$/include/AP.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AP.cpp" afterPath="$PROJECT_DIR$/src/AP.cpp" />
-    </list>
+    <list default="true" id="44d3b4fb-0065-4c69-9653-e3957d780d6a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -191,12 +188,12 @@
       <workItem from="1507884962862" duration="1316000" />
       <workItem from="1507907919695" duration="3387000" />
       <workItem from="1507981809111" duration="3415000" />
-      <workItem from="1508004000880" duration="18280000" />
+      <workItem from="1508004000880" duration="18344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115596000" />
+    <option name="totallyTimeSpent" value="115660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
