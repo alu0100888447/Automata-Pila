@@ -84,6 +84,7 @@ public:
      * @param cadena
      */
     void guardarCabezaPila(string cadena);
+    void mostrarPila();
     /**
      * @brief Funcion que guarda un conjunto de transiciones en un estado concreto.
      * @param id

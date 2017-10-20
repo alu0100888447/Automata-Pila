@@ -45,7 +45,8 @@ void AP::leerFichero(string nombreFichero) {
             getline(fichero, cadena);
             if (cadena[0] == '#' || cadena == "") {
                 cadena.clear();
-            } else {
+            }
+            else {
                 cadenas.push_back(separarCadenas(cadena));
             }
         }
@@ -118,6 +119,10 @@ bool AP::analisis() {
             }
             cout << "Estado actual: " << nombreEstado << endl;
             cout << "\tTransiciones posibles ->" << TransicionesPosibles;
+            cout << "Estado de la cadena: " << AuxAP.getCadenaEntrada_() << endl;
+            cout << "Estado de la pila: ";
+            AuxAP.mostrarPila();
+            cout << endl;
             switch (TransicionesPosibles.getNumeroTransiciones_()) {
                 case 0:
                     if (pilaRecorrido.size() != 0) {
@@ -160,6 +165,10 @@ bool AP::analisis() {
                     }
                 }
             }
+            cout << endl << "Estado de la cadena: " << AuxAP.getCadenaEntrada_() << endl;
+            cout << "Estado de la pila: ";
+            AuxAP.mostrarPila();
+            cout << endl << endl;
         }
         AuxTransicion.clearTransicion();
     } while (1 == 1);
@@ -204,6 +213,16 @@ void AP::guardarAlfabetoPila(vector <string> cadenas) {
 
 void AP::guardarCabezaPila(string cadena) {
     pilaAutomata_.push(cadena);
+}
+
+void AP::mostrarPila() {
+    stack <string> Aux = pilaAutomata_;
+    cout << "( ";
+    while (!Aux.empty()) {
+        cout << Aux.top() << " ";
+        Aux.pop();
+    }
+    cout << ")";
 }
 
 void AP::setTransicion(string id, SetTransiciones Transiciones) {
